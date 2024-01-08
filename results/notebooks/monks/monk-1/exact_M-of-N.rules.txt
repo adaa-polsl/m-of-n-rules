@@ -1,0 +1,3 @@
+r1: IF a1 != a2 = {0} THEN class = {True}  (p=41, n=0, P=62, N=62) \\
+r2: IF a5 = {1} = {1} THEN class = {True}  (p=29, n=0, P=62, N=62) \\
+r3: IF a5 = {1} = {0} AND a1 != a2 = {1} THEN class = {False}  (p=62, n=0, P=62, N=62) \\

@@ -1,0 +1,35 @@
+r1: IF a2 = {1} = {0} AND a5 = {1} = {0} AND 2-of-3(a6 != {2}, a3 != {1}, a1 != a4) = {1} THEN class = {False}  (p=33, n=5, P=105, N=64) \\
+r2: IF a5 = {2} = {0} AND a2 = {1} = {0} AND 2-of-3(a6 != {2}, a3 != {1}, a1 != a4) = {1} THEN class = {False}  (p=31, n=6, P=105, N=64) \\
+r3: IF a5 = {2} = {0} AND 2-of-3(a6 != {2}, a3 != {1}, a1 != a4) = {1} THEN class = {False}  (p=44, n=11, P=105, N=64) \\
+r4: IF a5 = {1} = {0} AND 2-of-3(a6 != {2}, a3 != {1}, a1 != a4) = {1} THEN class = {False}  (p=46, n=14, P=105, N=64) \\
+r5: IF a3 != a6 = {0} AND 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {0} AND a5 = {1} = {0} THEN class = {False}  (p=34, n=5, P=105, N=64) \\
+r6: IF a3 != a6 = {0} AND 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {0} THEN class = {False}  (p=41, n=9, P=105, N=64) \\
+r7: IF a3 != a6 = {0} AND a2 = {1} = {1} AND a5 = {1} = {0} AND 2-of-3(a6 != {1}, a3 = a6, a1 != a4) = {0} THEN class = {False}  (p=12, n=0, P=105, N=64) \\
+r8: IF a3 != a6 = {0} AND a5 = {2} = {0} AND 2-of-3(a6 != {1}, a3 = a6, a1 != a4) = {0} THEN class = {False}  (p=28, n=5, P=105, N=64) \\
+r9: IF a3 != a6 = {0} AND 2-of-3(a3 != a6, a6 != {2}, a1 != a2) = {0} AND a5 = {1} = {1} THEN class = {False}  (p=11, n=0, P=105, N=64) \\
+r10: IF 2-of-3(a3 != {1}, a6 != {1}, a1 != a4) = {0} AND a2 = {1} = {0} AND a5 = {4} = {1} THEN class = {False}  (p=14, n=2, P=105, N=64) \\
+r11: IF 2-of-3(a3 != {1}, a6 != {1}, a1 != a4) = {0} AND a2 = {1} = {0} AND a5 = {1} = {0} THEN class = {False}  (p=45, n=6, P=105, N=64) \\
+r12: IF a5 = {2} = {1} AND 2-of-3(a2 != a4, a1 != a2, a6 != {2}) = {0} AND a1 != a2 = {0} THEN class = {False}  (p=8, n=0, P=105, N=64) \\
+r13: IF 2-of-3(a2 != a4, a1 != a2, a6 != {2}) = {0} AND a1 != a2 = {0} AND a1 = {1} = {1} THEN class = {False}  (p=12, n=0, P=105, N=64) \\
+r14: IF 2-of-3(a4 = {2}, a1 != a2, a2 != a4) = {1} AND a3 != {1} = {1} AND a1 != a2 = {0} THEN class = {False}  (p=6, n=0, P=105, N=64) \\
+r15: IF 2-of-3(a2 != a4, a1 != a4, a6 != {2}) = {1} AND a5 = {4} = {0} AND a4 = {3} = {0} AND a1 != a2 = {0} THEN class = {False}  (p=12, n=1, P=105, N=64) \\
+r16: IF 2-of-3(a6 != {2}, a3 != {2}, a1 != a2) = {0} AND a5 = {1} = {0} THEN class = {False}  (p=52, n=17, P=105, N=64) \\
+r17: IF 2-of-3(a6 != {2}, a3 != {1}, a2 != a4) = {1} THEN class = {False}  (p=49, n=19, P=105, N=64) \\
+r18: IF 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {0} AND a4 = {1} = {1} AND a5 = {1} = {0} THEN class = {False}  (p=22, n=0, P=105, N=64) \\
+r19: IF 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {0} AND a4 = {1} = {1} THEN class = {False}  (p=30, n=1, P=105, N=64) \\
+r20: IF 2-of-3(a6 != {2}, a3 != {1}, a1 != a2) = {0} AND a4 = {1} = {1} AND a5 = {1} = {1} THEN class = {False}  (p=12, n=0, P=105, N=64) \\
+r21: IF 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {0} AND a5 = {1} = {0} THEN class = {False}  (p=53, n=17, P=105, N=64) \\
+r22: IF 2-of-3(a4 = {1}, a1 != a4, a2 != a4) = {1} AND a6 != {1} = {1} THEN class = {False}  (p=33, n=7, P=105, N=64) \\
+r23: IF 2-of-3(a4 = {1}, a1 != a4, a2 != a4) = {1} AND a5 = {1} = {1} AND a3 != {1} = {1} THEN class = {False}  (p=9, n=0, P=105, N=64) \\
+r24: IF 2-of-3(a3 != {1}, a6 != {1}, a1 != a4) = {1} AND a2 = {1} = {0} AND a5 = {1} = {0} THEN class = {True}  (p=27, n=8, P=64, N=105) \\
+r25: IF 2-of-3(a3 != {1}, a6 != {1}, a1 != a4) = {1} AND a5 = {1} = {0} THEN class = {True}  (p=33, n=15, P=64, N=105) \\
+r26: IF 2-of-3(a3 != {1}, a6 != {1}, a1 != a4) = {1} AND a2 = {1} = {0} THEN class = {True}  (p=32, n=19, P=64, N=105) \\
+r27: IF a3 != a6 = {1} AND 2-of-3(a4 = {1}, a1 != a4, a2 != a4) = {0} AND a5 = {1} = {0} THEN class = {True}  (p=21, n=9, P=64, N=105) \\
+r28: IF a3 != a6 = {1} AND 2-of-3(a4 = {1}, a1 != a4, a2 != a4) = {0} THEN class = {True}  (p=28, n=17, P=64, N=105) \\
+r29: IF 2-of-3(a6 != {2}, a3 != {2}, a1 != a4) = {1} THEN class = {True}  (p=36, n=36, P=64, N=105) \\
+r30: IF 2-of-3(a6 != {2}, a3 != {2}, a1 != a2) = {1} AND a4 = {1} = {0} AND a5 = {1} = {0} THEN class = {True}  (p=27, n=11, P=64, N=105) \\
+r31: IF a5 = {2} = {1} AND 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {1} THEN class = {True}  (p=12, n=4, P=64, N=105) \\
+r32: IF 2-of-3(a3 = a6, a1 != a4, a2 != a4) = {1} AND a5 = {1} = {0} THEN class = {True}  (p=33, n=23, P=64, N=105) \\
+r33: IF 2-of-3(a1 != a4, a4 = {3}, a2 != a4) = {1} AND a5 = {4} = {0} AND a1 != a2 = {1} THEN class = {True}  (p=24, n=19, P=64, N=105) \\
+r34: IF 2-of-3(a2 != a4, a1 != a4, a6 != {2}) = {0} AND a5 = {4} = {0} AND a4 = {1} = {0} AND a1 != a2 = {1} THEN class = {True}  (p=23, n=15, P=64, N=105) \\
+r35: IF 2-of-3(a6 != {2}, a3 != {1}, a1 != a2) = {0} AND a4 = {3} = {1} AND a5 = {1} = {0} THEN class = {True}  (p=16, n=9, P=64, N=105) \\

@@ -1,0 +1,7 @@
+r1: IF a2 = {1, 2} AND a5 = {1, 2, 3} THEN class = {1}  (p=57, n=5, P=60, N=62) \\
+r2: IF a1 != a4 AND a5 = {1, 2, 3} THEN class = {1}  (p=42, n=16, P=60, N=62) \\
+r3: IF a5 = {4} THEN class = {0}  (p=30, n=1, P=62, N=60) \\
+r4: IF a2 = {3} AND a4 = {2, 3} THEN class = {0}  (p=27, n=0, P=62, N=60) \\
+r5: IF a2 = {3} AND a5 = {1, 2, 4} THEN class = {0}  (p=30, n=1, P=62, N=60) \\
+r6: IF a1 != a4 AND a1 = a2 AND a2 = {2, 3} AND a4 = {2, 3} AND a5 = {3, 4} THEN class = {0}  (p=6, n=0, P=62, N=60) \\
+r7: IF a2 = a4 AND a1 = {1, 2} AND a3 != {2} AND a5 = {3, 4} THEN class = {0}  (p=7, n=0, P=62, N=60) \\

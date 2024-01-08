@@ -1,0 +1,23 @@
+r1: IF a5 = {1} THEN class = {True}  (p=29, n=0, P=62, N=62) \\
+r2: IF a1 = {3} AND a2 = {3} THEN class = {True}  (p=17, n=0, P=62, N=62) \\
+r3: IF a3 = {2} AND a4 = {1} AND a6 = {1} THEN class = {True}  (p=7, n=1, P=62, N=62) \\
+r4: IF a1 = {2} AND a2 = {2} THEN class = {True}  (p=15, n=0, P=62, N=62) \\
+r5: IF a1 = {1} AND a2 = {1} THEN class = {True}  (p=9, n=0, P=62, N=62) \\
+r6: IF a1 = {1} AND a2 = {3} AND a5 = {4} THEN class = {False}  (p=8, n=0, P=62, N=62) \\
+r7: IF a1 = {1} AND a3 = {1} AND a5 = {4} THEN class = {False}  (p=7, n=0, P=62, N=62) \\
+r8: IF a1 = {1} AND a2 = {2} AND a5 = {4} THEN class = {False}  (p=5, n=0, P=62, N=62) \\
+r9: IF a1 = {1} AND a2 = {2} AND a3 = {2} THEN class = {False}  (p=7, n=0, P=62, N=62) \\
+r10: IF a1 = {1} AND a2 = {2} AND a5 = {3} THEN class = {False}  (p=6, n=0, P=62, N=62) \\
+r11: IF a1 = {1} AND a2 = {2} AND a5 = {2} THEN class = {False}  (p=4, n=0, P=62, N=62) \\
+r12: IF a1 = {1} AND a2 = {3} AND a5 = {2} THEN class = {False}  (p=6, n=0, P=62, N=62) \\
+r13: IF a1 = {1} AND a2 = {3} AND a5 = {3} THEN class = {False}  (p=2, n=0, P=62, N=62) \\
+r14: IF a1 = {2} AND a2 = {1} AND a5 = {4} THEN class = {False}  (p=6, n=0, P=62, N=62) \\
+r15: IF a1 = {3} AND a2 = {2} AND a5 = {4} THEN class = {False}  (p=3, n=0, P=62, N=62) \\
+r16: IF a4 = {2} AND a5 = {2} AND a6 = {2} THEN class = {False}  (p=4, n=0, P=62, N=62) \\
+r17: IF a1 = {2} AND a3 = {2} AND a5 = {2} AND a6 = {2} THEN class = {False}  (p=2, n=0, P=62, N=62) \\
+r18: IF a1 = {3} AND a2 = {1} AND a5 = {2} THEN class = {False}  (p=5, n=0, P=62, N=62) \\
+r19: IF a3 = {2} AND a5 = {2} THEN class = {False}  (p=12, n=4, P=62, N=62) \\
+r20: IF a2 = {3} AND a5 = {3} AND a6 = {1} THEN class = {False}  (p=3, n=0, P=62, N=62) \\
+r21: IF a1 = {2} AND a2 = {1} AND a5 = {3} THEN class = {False}  (p=5, n=0, P=62, N=62) \\
+r22: IF a1 = {2} AND a2 = {3} AND a5 = {3} THEN class = {False}  (p=4, n=0, P=62, N=62) \\
+r23: IF a3 = {2} AND a5 = {3} THEN class = {False}  (p=10, n=4, P=62, N=62) \\

@@ -1,0 +1,53 @@
+r1: IF a4 = {1} AND a5 = {1} AND a6 = {1} THEN class = {False}  (p=9, n=0, P=105, N=64) \\
+r2: IF a3 = {1} AND a4 = {1} AND a5 = {1} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r3: IF a1 = {1} AND a3 = {1} AND a4 = {1} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r4: IF a1 = {1} AND a4 = {1} AND a6 = {1} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r5: IF a3 = {1} AND a4 = {1} AND a6 = {1} THEN class = {False}  (p=11, n=0, P=105, N=64) \\
+r6: IF a2 = {1} AND a4 = {1} AND a6 = {1} THEN class = {False}  (p=10, n=0, P=105, N=64) \\
+r7: IF a2 = {1} AND a4 = {1} THEN class = {False}  (p=13, n=4, P=105, N=64) \\
+r8: IF a1 = {2} AND a3 = {2} AND a5 = {4} AND a6 = {2} THEN class = {False}  (p=6, n=0, P=105, N=64) \\
+r9: IF a2 = {2} AND a3 = {2} AND a4 = {1} AND a6 = {2} THEN class = {False}  (p=5, n=0, P=105, N=64) \\
+r10: IF a2 = {1} AND a5 = {4} AND a6 = {1} THEN class = {False}  (p=9, n=0, P=105, N=64) \\
+r11: IF a2 = {3} AND a3 = {2} AND a5 = {4} THEN class = {False}  (p=5, n=0, P=105, N=64) \\
+r12: IF a2 = {3} AND a4 = {2} AND a5 = {4} THEN class = {False}  (p=3, n=0, P=105, N=64) \\
+r13: IF a3 = {2} AND a4 = {3} AND a5 = {4} AND a6 = {2} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r14: IF a1 = {1} AND a3 = {1} AND a6 = {1} THEN class = {False}  (p=16, n=0, P=105, N=64) \\
+r15: IF a2 = {1} AND a5 = {1} AND a6 = {1} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r16: IF a1 = {1} AND a6 = {1} THEN class = {False}  (p=24, n=5, P=105, N=64) \\
+r17: IF a3 = {1} AND a5 = {1} AND a6 = {1} THEN class = {False}  (p=9, n=0, P=105, N=64) \\
+r18: IF a6 = {1} THEN class = {False}  (p=56, n=28, P=105, N=64) \\
+r19: IF a1 = {1} AND a3 = {1} AND a5 = {1} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r20: IF a2 = {1} AND a3 = {1} AND a5 = {1} THEN class = {False}  (p=7, n=0, P=105, N=64) \\
+r21: IF a1 = {1} THEN class = {False}  (p=38, n=19, P=105, N=64) \\
+r22: IF a1 = {2} AND a3 = {2} AND a4 = {3} THEN class = {False}  (p=10, n=2, P=105, N=64) \\
+r23: IF a2 = {3} AND a3 = {2} AND a4 = {2} AND a5 = {3} THEN class = {False}  (p=4, n=0, P=105, N=64) \\
+r24: IF a2 = {2} AND a3 = {2} AND a5 = {3} AND a6 = {2} THEN class = {False}  (p=5, n=0, P=105, N=64) \\
+r25: IF a2 = {2} AND a3 = {2} AND a5 = {2} THEN class = {False}  (p=8, n=0, P=105, N=64) \\
+r26: IF a2 = {3} AND a4 = {2} AND a5 = {3} AND a6 = {2} THEN class = {False}  (p=5, n=1, P=105, N=64) \\
+r27: IF a2 = {2} AND a3 = {1} AND a5 = {2} THEN class = {True}  (p=5, n=0, P=64, N=105) \\
+r28: IF a3 = {1} AND a4 = {3} AND a5 = {2} AND a6 = {2} THEN class = {True}  (p=4, n=0, P=64, N=105) \\
+r29: IF a3 = {1} AND a4 = {2} AND a5 = {2} AND a6 = {2} THEN class = {True}  (p=4, n=0, P=64, N=105) \\
+r30: IF a1 = {3} AND a2 = {1} AND a5 = {2} AND a6 = {1} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r31: IF a2 = {1} AND a3 = {2} AND a4 = {1} AND a5 = {2} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r32: IF a2 = {1} AND a3 = {2} AND a5 = {2} THEN class = {True}  (p=6, n=2, P=64, N=105) \\
+r33: IF a2 = {3} AND a4 = {3} AND a5 = {2} THEN class = {True}  (p=3, n=1, P=64, N=105) \\
+r34: IF a1 = {2} AND a2 = {3} AND a3 = {1} AND a4 = {3} THEN class = {True}  (p=3, n=0, P=64, N=105) \\
+r35: IF a1 = {2} AND a2 = {2} AND a3 = {1} AND a4 = {3} AND a6 = {1} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r36: IF a3 = {1} AND a4 = {3} AND a5 = {4} AND a6 = {2} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r37: IF a2 = {1} AND a3 = {1} AND a5 = {3} AND a6 = {2} THEN class = {True}  (p=3, n=0, P=64, N=105) \\
+r38: IF a3 = {1} AND a4 = {3} THEN class = {True}  (p=16, n=14, P=64, N=105) \\
+r39: IF a1 = {3} AND a3 = {2} AND a4 = {3} AND a5 = {1} THEN class = {True}  (p=3, n=0, P=64, N=105) \\
+r40: IF a1 = {1} AND a3 = {2} AND a4 = {3} AND a6 = {1} THEN class = {True}  (p=3, n=1, P=64, N=105) \\
+r41: IF a2 = {2} AND a3 = {2} AND a4 = {3} AND a5 = {1} THEN class = {True}  (p=3, n=1, P=64, N=105) \\
+r42: IF a3 = {1} AND a5 = {4} AND a6 = {2} THEN class = {True}  (p=4, n=1, P=64, N=105) \\
+r43: IF a1 = {3} AND a3 = {1} AND a4 = {1} AND a5 = {3} AND a6 = {2} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r44: IF a1 = {1} AND a3 = {1} AND a4 = {2} AND a5 = {3} AND a6 = {2} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r45: IF a3 = {1} AND a6 = {2} THEN class = {True}  (p=24, n=19, P=64, N=105) \\
+r46: IF a1 = {3} AND a2 = {1} AND a4 = {1} AND a6 = {2} THEN class = {True}  (p=3, n=0, P=64, N=105) \\
+r47: IF a2 = {1} AND a6 = {2} THEN class = {True}  (p=16, n=14, P=64, N=105) \\
+r48: IF a1 = {1} AND a2 = {3} AND a6 = {2} THEN class = {True}  (p=6, n=5, P=64, N=105) \\
+r49: IF a3 = {2} AND a4 = {2} AND a5 = {1} THEN class = {True}  (p=5, n=0, P=64, N=105) \\
+r50: IF a1 = {1} AND a2 = {2} AND a3 = {2} AND a4 = {2} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r51: IF a2 = {2} AND a3 = {2} AND a6 = {1} THEN class = {True}  (p=10, n=8, P=64, N=105) \\
+r52: IF a1 = {2} AND a3 = {1} AND a4 = {2} AND a5 = {3} AND a6 = {1} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
+r53: IF a1 = {2} AND a2 = {3} AND a3 = {2} AND a4 = {1} AND a6 = {1} THEN class = {True}  (p=2, n=0, P=64, N=105) \\
