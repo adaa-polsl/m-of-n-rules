@@ -171,26 +171,19 @@ def main(
     experiment_config: ExperimentConfig
 ):
     logging.basicConfig(filename='log.log')
-    try:
-        RuleKit.init(
-            jar_file_path=config.JAR_PATH,
-            initial_heap_size=config.RULEKIT_INITIAL_HEAP_SIZE,
-            max_heap_size=config.RULEKIT_MAX_HEAP_SIZE
-        )
-        initialize_experiment(experiment_config)
 
-        if config.CV_ENABLED and 'monk' not in experiment_config.dataset_name:
-            run_expriment_with_cross_validation(experiment_config)
-        else:
-            run_experiment_train_test(experiment_config)
-        finish_experiment(experiment_config)
-    except Exception as e:
-        logging.error(f'Some nasty error occured for dataset {experiment_config.dataset_name}')
-        logging.error(str(e))
-        logging.error(e.java_stack_trace)
-        logging.exception(e)
-        if hasattr(e, 'java_stack_trace'):
-            logging.error(e.java_stack_trace)
+    RuleKit.init(
+        jar_file_path=config.JAR_PATH,
+        initial_heap_size=config.RULEKIT_INITIAL_HEAP_SIZE,
+        max_heap_size=config.RULEKIT_MAX_HEAP_SIZE
+    )
+    initialize_experiment(experiment_config)
+
+    if config.CV_ENABLED and 'monk' not in experiment_config.dataset_name:
+        run_expriment_with_cross_validation(experiment_config)
+    else:
+        run_experiment_train_test(experiment_config)
+    finish_experiment(experiment_config)
 
 if __name__ == '__main__':
     

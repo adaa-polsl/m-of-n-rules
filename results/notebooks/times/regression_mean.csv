@@ -1,0 +1,5 @@
+model_type,training time total (s),training time total (s) (std),training time growing (s) (std),training time growing (s),training time pruning (s) (std),training time pruning (s)
+at_least_M-of-N,242.451,297.052,3.812,4.403,43.606,32.121
+complex,352.48,121.477,119.819,346.54,1.817,5.916
+exact_M-of-N,241.37,298.223,3.423,4.108,42.564,31.514
+plain,81.655,81.251,58.171,60.296,23.246,21.355

@@ -23,13 +23,13 @@ JAR_PATH: str = f'{dir_path}/../../utils/rulekit/jar/rulekit-1.8.4-all.jar'
 LABEL_NAME: str = 'class'
 
 M: int = 2
-N: int = 3
+N: int = 6
 
 MAX_CANDIDATES: int = 1000
 MIN_CANDIDATES: int = 10
 
 # min support for frequent dataset not smaller than MIN_SUPP_FRACTION of original dataset
-MIN_SUPP_FRACTION: float = 0.20
+MIN_SUPP_FRACTION: float = 0.1
 
 # JVM initial heap size and max heap size - could be decreased probably
 RULEKIT_INITIAL_HEAP_SIZE: int = 20480  # (mb) = 20gb
@@ -64,43 +64,43 @@ CV_ENABLED: bool = True
 CV_FOLDS = 10
 
 DATASETS = [
-    'hayes-roth',
-    'lymphography',
-    'glass',
-    'ecoli',
-    'titanic',
-    'anneal',
-    'autos',
-    'iris',
-    'hepatitis',
-    'heart-statlog',
-    'cylinder-bands',
-    'echocardiogram',
+    # 'hayes-roth',
+    # 'lymphography',
+    # 'glass',
+    # 'ecoli',
+    # 'titanic',
+    # 'anneal',
+    # 'autos',
+    # 'iris',
+    # 'hepatitis',
+    # 'heart-statlog',
+    # 'cylinder-bands',
+    # 'echocardiogram',
     'monk-2',
-    'car',
-    'nursery',
-    'bupa-liver-disorders',
-    'mushroom',
-    'monk-1',
-    'zoo',
-    'auto-mpg',
-    'monk-3',
-    'balance-scale',
-    'wine',
-    'tic-tac-toe',
-    'sonar',
-    'flag',
-    'cleveland',
-    'heart-c',
-    'vote',
-    'soybean',
+    # 'car',
+    # 'nursery',
+    # 'bupa-liver-disorders',
+    # 'mushroom',
+    # 'monk-1',
+    # 'zoo',
+    # 'auto-mpg',
+    # 'monk-3',
+    # 'balance-scale',
+    # 'wine',
+    # 'tic-tac-toe',
+    # 'sonar',
+    # 'flag',
+    # 'cleveland',
+    # 'heart-c',
+    # 'vote',
+    # 'soybean',
 ]
 
 
 VARIANTS = {
     'no_discretization': {
         'discretization_enabled': False,
-        'use_all_possible_values': False,
+        'use_all_possible_values': True,
     },
 }
 
