@@ -1,0 +1,17 @@
+{
+  "closed": "right",
+  "cut_points": {
+    "age": [],
+    "trestbps": [],
+    "chol": [],
+    "thalach": [
+      150.0
+    ],
+    "oldpeak": [
+      1.899999976158142
+    ],
+    "ca": [
+      1.0
+    ]
+  }
+}

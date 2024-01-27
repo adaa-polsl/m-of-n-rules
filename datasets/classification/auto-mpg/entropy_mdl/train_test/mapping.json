@@ -1,0 +1,24 @@
+{
+  "closed": "right",
+  "cut_points": {
+    "mpg": [
+      20.0,
+      31.0
+    ],
+    "displacement": [
+      134.5,
+      190.5
+    ],
+    "horsepower": [
+      78.5,
+      134.0
+    ],
+    "weight": [
+      2566.0,
+      2981.5
+    ],
+    "acceleration": [
+      13.5
+    ]
+  }
+}

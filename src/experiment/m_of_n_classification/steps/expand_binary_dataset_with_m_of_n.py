@@ -92,14 +92,8 @@ def prepare_candidates(
     candidates = sorted(
         candidates, key=lambda k: k['avg_support'], reverse=True)
 
-    limit: int = 10000# config.N * elementary_conditions_count
-
-    if limit > config.MAX_CANDIDATES and len(candidates) > limit:
+    if len(candidates) > config.MAX_CANDIDATES:
         candidates = candidates[:config.MAX_CANDIDATES]
-    elif limit < config.MIN_CANDIDATES and len(candidates) > limit:
-        candidates = candidates[:config.MIN_CANDIDATES]
-    else:
-        candidates = candidates[:limit]
 
     candidates = [
         e['candidate'] for e in candidates

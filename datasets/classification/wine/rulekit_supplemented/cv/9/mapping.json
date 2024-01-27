@@ -1,0 +1,19 @@
+{
+  "closed": "left",
+  "cut_points": {
+    "Alcohol": [
+      12.44,
+      13.02,
+      13.14
+    ],
+    "Alcalinity_of_ash": [],
+    "Flavanoids": [],
+    "Color_intensity": [
+      14.05,
+      17.15,
+      27.5
+    ],
+    "OD280/OD315_of_diluted_wines": [],
+    "Proline": []
+  }
+}

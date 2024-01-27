@@ -1,0 +1,22 @@
+{
+  "closed": "right",
+  "cut_points": {
+    "age": [
+      54.0
+    ],
+    "resting_blood_pressure": [],
+    "serum_cholestoral": [],
+    "maximum_heart_rate_achieved": [
+      147.5
+    ],
+    "oldpeak": [
+      1.600000023841858
+    ],
+    "slope": [
+      1.5
+    ],
+    "number_of_major_vessels": [
+      0.5
+    ]
+  }
+}

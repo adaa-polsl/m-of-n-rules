@@ -1,0 +1,22 @@
+{
+  "closed": "right",
+  "cut_points": {
+    "AGE": [
+      31.0
+    ],
+    "BILIRUBIN": [
+      1.5
+    ],
+    "ALK_PHOSPHATE": [
+      105.0
+    ],
+    "SGOT": [],
+    "ALBUMIN": [
+      3.799999952316284
+    ],
+    "PROTIME": [
+      29.5,
+      46.0
+    ]
+  }
+}

@@ -1,0 +1,98 @@
+{
+  "closed": "left",
+  "cut_points": {
+    "attribute_1": [
+      0.059,
+      0.064
+    ],
+    "attribute_3": [],
+    "attribute_4": [
+      0.0019
+    ],
+    "attribute_7": [
+      0.045,
+      0.052,
+      0.058,
+      0.15
+    ],
+    "attribute_8": [],
+    "attribute_9": [],
+    "attribute_10": [
+      0.14
+    ],
+    "attribute_11": [
+      0.071
+    ],
+    "attribute_12": [
+      0.1,
+      0.11
+    ],
+    "attribute_13": [
+      0.03
+    ],
+    "attribute_16": [
+      0.11,
+      0.18,
+      0.2
+    ],
+    "attribute_17": [
+      0.17,
+      0.43,
+      0.62
+    ],
+    "attribute_19": [
+      0.04
+    ],
+    "attribute_23": [],
+    "attribute_25": [],
+    "attribute_27": [
+      0.67
+    ],
+    "attribute_28": [
+      0.7
+    ],
+    "attribute_29": [],
+    "attribute_30": [
+      0.78,
+      0.83
+    ],
+    "attribute_31": [],
+    "attribute_33": [],
+    "attribute_34": [],
+    "attribute_35": [
+      0.41,
+      0.75
+    ],
+    "attribute_36": [],
+    "attribute_37": [
+      0.56
+    ],
+    "attribute_39": [],
+    "attribute_44": [
+      0.23,
+      0.3,
+      0.82
+    ],
+    "attribute_45": [
+      0.96,
+      0.99
+    ],
+    "attribute_47": [
+      0.8
+    ],
+    "attribute_49": [
+      0.16,
+      0.35
+    ],
+    "attribute_52": [
+      0.42
+    ],
+    "attribute_54": [],
+    "attribute_58": [
+      0.14
+    ],
+    "attribute_59": [
+      0.69
+    ]
+  }
+}

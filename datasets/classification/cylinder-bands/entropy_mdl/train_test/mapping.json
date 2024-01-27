@@ -1,0 +1,40 @@
+{
+  "closed": "right",
+  "cut_points": {
+    "unit_number": [],
+    "proof_cut": [
+      45.0,
+      46.281944274902344
+    ],
+    "viscosity": [],
+    "ink_temperature": [],
+    "humifity": [],
+    "roughness": [],
+    "blade_pressure": [],
+    "varnish_pct": [],
+    "press_speed": [
+      2200.0
+    ],
+    "ink_pct": [],
+    "solvent_pct": [],
+    "ESA_Voltage": [
+      0.0,
+      1.0,
+      4.0
+    ],
+    "ESA_Amperage": [
+      0.011560693383216858,
+      0.26156070828437805,
+      4.0
+    ],
+    "wax": [],
+    "hardener": [
+      0.3499999940395355,
+      0.8999999761581421
+    ],
+    "roller_durometer": [
+      33.0
+    ],
+    "anode_space_ratio": []
+  }
+}

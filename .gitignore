@@ -50,7 +50,6 @@ Thumbs.db
 env/
 
 _cache/
-datasets/
 main.ipynb
 
 **/*.jar
@@ -61,3 +60,4 @@ main.ipynb
 **/model.pickle
 
 ./results/clear.ipynb
+./datasets/clear.ipynb

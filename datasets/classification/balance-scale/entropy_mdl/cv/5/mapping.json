@@ -1,0 +1,20 @@
+{
+  "closed": "right",
+  "cut_points": {
+    "left-weight": [
+      2.0,
+      3.0
+    ],
+    "left-distance": [
+      2.0
+    ],
+    "right-weight": [
+      1.0,
+      3.0
+    ],
+    "right-distance": [
+      2.0,
+      4.0
+    ]
+  }
+}

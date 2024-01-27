@@ -2,6 +2,19 @@
 
 This repository contains data sets and code base used for experimental evaluation of the proposed algorithm of rule induction with complex elementary conditions. 
 
+### Configuring experiments
+
+The experiment code is located in the `src/experiment/` directory and is divided into three subdirectories: `m_of_n_classification`, `m_of_n_regression` and `m_of_n_survival`, for each problem type analysed. 
+
+Each experiment can be configured using the `config.py` file located in its directory (e.g. for the classification problem this will be `src/experiment/m_of_n_classification/config.py`). This file allows you to configure the running of the experiment. The parameters that can be configured are listed below:
+* `M` - parameter M for M-of-N conditions,
+* `N` - parameter N for M-of-N conditions,
+* `MAX_CANDIDATES` - the maximum number of candidates among M of N conditions to be considered,
+* `MIN_SUPP_FRACTION` - minimum support used for the FP-Growth frequent element search algorithm,
+* `get_rulekit_params` - Function that returns the parameters of the RuleKit algorithm used for rule induction. It accepts one parameter **complex_condition_enabled**. If set to True, complex conditions (excluding M-of-N conditions) will be induced.
+* `CV_ENABLED` - Enable/disable cross-validation,
+* `DATASETS` - List of datasets (from the `datasets` directory) to be used during the experiment.
+
 ### Running experiment
 
 To run experiments you first need a working distribution of Python installed on your machine (version 3). Then you have to install all required dependencies using following command:

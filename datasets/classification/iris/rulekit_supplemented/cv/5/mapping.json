@@ -1,0 +1,23 @@
+{
+  "closed": "left",
+  "cut_points": {
+    "sepallength": [
+      4.95
+    ],
+    "sepalwidth": [
+      2.45,
+      2.95,
+      3.05
+    ],
+    "petallength": [
+      2.45,
+      4.75,
+      4.85
+    ],
+    "petalwidth": [
+      1.6,
+      1.65,
+      1.75
+    ]
+  }
+}

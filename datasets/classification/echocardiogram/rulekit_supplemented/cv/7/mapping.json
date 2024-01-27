@@ -1,0 +1,35 @@
+{
+  "closed": "left",
+  "cut_points": {
+    "survival": [
+      0.88,
+      8.75,
+      11.0,
+      15.5,
+      19.75,
+      20.5,
+      21.5
+    ],
+    "age-at-heart-attack": [
+      57.5,
+      72.5,
+      73.5
+    ],
+    "fractional-shortening": [
+      0.25
+    ],
+    "epss": [
+      2.4,
+      19.15,
+      29.95
+    ],
+    "lvdd": [
+      6.25
+    ],
+    "wall-motion-index": [],
+    "mult": [
+      1.89,
+      1.91
+    ]
+  }
+}

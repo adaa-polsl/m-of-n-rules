@@ -1,0 +1,19 @@
+{
+  "closed": "left",
+  "cut_points": {
+    "lym_nodes_dimin": [
+      2.5
+    ],
+    "lym_nodes_enlar": [
+      1.5,
+      2.5,
+      3.5
+    ],
+    "no_of_nodes_in": [
+      1.5,
+      2.5,
+      3.5,
+      4.5
+    ]
+  }
+}
