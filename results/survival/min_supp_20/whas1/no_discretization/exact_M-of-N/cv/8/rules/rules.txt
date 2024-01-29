@@ -1,16 +1,16 @@
 Rules qualities:
 r1: 1.0
-r2: 0.9999999999999998
-r3: 0.9999999654543997
-r4: 0.9999999999999931
-r5: 1.0
-r6: 0.9906599945163038
+r2: 0.9999998950503189
+r3: 0.9999999999825155
+r4: 0.9999999994093928
+r5: 0.9923372935686171
+r6: 0.9999999742419036
 r7: 0.9999992780929398
 ________________________________
 r1: IF SHO > MIORD = {1} THEN  (p=18.0, n=0.0, P=433.0, N=0.0)
-r2: IF CPK != <456.50, 465) = {1} AND CPK != <153, 160) = {1} AND MITYPE = (-inf, 2.50) = {1} AND SHO > MIORD = {0} AND CHF = MITYPE = {0} AND CPK != <206.50, 227) = {1} AND SHO < CHF = {0} THEN  (p=251.0, n=0.0, P=433.0, N=0.0)
-r3: IF SEX < CHF = {1} AND CHF > MIORD = {0} THEN  (p=39.0, n=0.0, P=433.0, N=0.0)
-r4: IF 2-of-3(AGE != <73.50, 77), SHO = (-inf, 0.50), CPK != <153, 160)) = {1} THEN  (p=61.0, n=0.0, P=433.0, N=0.0)
-r5: IF SHO > MIORD = {0} AND AGE = (-inf, 71.50) = {1} AND SEX < CHF = {0} AND SHO < CHF = {0} THEN  (p=183.0, n=0.0, P=433.0, N=0.0)
-r6: IF 2-of-3(AGE != <67, 72), CPK != <880, 982), MITYPE = (-inf, 2.50)) = {0} AND MITYPE = (-inf, 2.50) = {1} AND AGE = (-inf, 72.50) = {1} AND SEX < CHF = {1} AND CHF > MIORD = {1} AND SHO = CHF = {0} THEN  (p=21.0, n=0.0, P=433.0, N=0.0)
+r2: IF CPK != <456.50, 465) = {1} AND SHO > MIORD = {0} AND CPK != <33.50, 186) = {1} AND 2-of-3(SEX > SHO, SHO = CHF, CHF < MITYPE) = {1} AND CPK != <227.50, 245) = {1} AND CPK != <206.50, 227) = {1} AND CPK != <631, 722) = {1} THEN  (p=150.0, n=0.0, P=433.0, N=0.0)
+r3: IF 2-of-3(SEX > SHO, SHO < MIORD, CHF < MITYPE) = {0} AND SEX < CHF = {1} AND CHF > MIORD = {0} THEN  (p=27.0, n=0.0, P=433.0, N=0.0)
+r4: IF SHO > MIORD = {0} AND SEX < CHF = {0} AND CHF > MIORD = {0} THEN  (p=293.0, n=0.0, P=433.0, N=0.0)
+r5: IF AGE != <67, 72) = {1} AND 2-of-3(SEX > SHO, SHO = CHF, CHF < MITYPE) = {0} AND AGE = (-inf, 72.50) = {1} AND CHF > MIORD = {1} AND SHO = CHF = {0} THEN  (p=24.0, n=0.0, P=433.0, N=0.0)
+r6: IF SHO < MIORD = {1} AND SHO < CHF = {1} THEN  (p=61.0, n=0.0, P=433.0, N=0.0)
 r7: IF SHO = CHF = {0} THEN  (p=148.0, n=0.0, P=433.0, N=0.0)

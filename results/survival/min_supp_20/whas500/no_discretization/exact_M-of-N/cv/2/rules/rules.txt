@@ -1,12 +1,36 @@
 Rules qualities:
-r1: 0.9999999983766169
-r2: 0.9999500234557415
-r3: 1.0
-r4: 0.9999999999999983
+r1: 0.9999457804136346
+r2: 0.9999999999999881
+r3: 0.9999968603379026
+r4: 0.9999999999710777
 r5: 1.0
+r6: 0.9999999999999789
+r7: 0.9999999999999917
+r8: 0.9999900794901471
+r9: 0.9999607523899663
+r10: 0.9977566282410852
+r11: 0.8098596111399761
+r12: 0.8670288373101106
+r13: 0.9998687277222371
+r14: 0.999999970975148
+r15: 0.9999954930655158
+r16: 0.9999996064202666
+r17: 0.962626338967724
 ________________________________
-r1: IF cvd > av3 = {1} AND gender > sho = {0} AND cvd > sho = {1} AND gender = chf = {1} AND age = <70.50, inf) = {0} THEN  (p=75.0, n=0.0, P=450.0, N=0.0)
-r2: IF sho = mitype = {0} AND cvd > av3 = {0} AND gender > sho = {0} AND 2-of-3(hr < sysbp, afb = sho, sho = av3) = {0} AND cvd = sho = {1} THEN  (p=35.0, n=0.0, P=450.0, N=0.0)
-r3: IF age = (-inf, 71.50) = {1} THEN  (p=218.0, n=0.0, P=450.0, N=0.0)
-r4: IF bmi = (-inf, 24.85) = {1} AND hr < diasbp = {0} THEN  (p=117.0, n=0.0, P=450.0, N=0.0)
-r5: IF age = <70.50, inf) = {1} THEN  (p=241.0, n=0.0, P=450.0, N=0.0)
+r1: IF 2-of-3(sho = mitype, hr > diasbp, cvd > av3) = {1} AND 2-of-3(sho = mitype, hr > diasbp, afb = sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {1} AND 2-of-3(sho = mitype, hr > diasbp, cvd > chf) = {1} AND 2-of-3(sho = mitype, hr > diasbp, cvd > sho) = {1} THEN  (p=47.0, n=0.0, P=450.0, N=0.0)
+r2: IF 2-of-3(sho = mitype, hr > diasbp, cvd > av3) = {0} AND 2-of-3(sho = mitype, hr > diasbp, cvd > chf) = {0} AND age = <70.50, inf) = {0} THEN  (p=116.0, n=0.0, P=450.0, N=0.0)
+r3: IF 2-of-3(sho = mitype, hr > diasbp, afb = sho) = {0} AND 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {0} AND 2-of-3(afb = sho, age = (-inf, 71.50), bmi != <22.27, 22.47)) = {0} THEN  (p=105.0, n=0.0, P=450.0, N=0.0)
+r4: IF 2-of-3(afb = sho, age = (-inf, 71.50), bmi != <22.27, 22.47)) = {0} THEN  (p=246.0, n=0.0, P=450.0, N=0.0)
+r5: IF age = (-inf, 71.50) = {1} THEN  (p=218.0, n=0.0, P=450.0, N=0.0)
+r6: IF bmi != <22.27, 22.47) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender > sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {1} AND 2-of-3(sho = mitype, hr < diasbp, gender = chf) = {0} AND 2-of-3(afb = sho, age = (-inf, 71.50), cvd > chf) = {0} THEN  (p=32.0, n=0.0, P=450.0, N=0.0)
+r7: IF 2-of-3(sho = mitype, gender = chf, hr < sysbp) = {0} AND 2-of-3(sho = mitype, gender > sho, hr < sysbp) = {0} AND bmi = (-inf, 24.85) = {1} THEN  (p=44.0, n=0.0, P=450.0, N=0.0)
+r8: IF 2-of-3(sho = mitype, gender = chf, hr < sysbp) = {1} AND 2-of-3(sho = mitype, hr < sysbp, gender > mitype) = {1} THEN  (p=48.0, n=0.0, P=450.0, N=0.0)
+r9: IF 2-of-3(sho = mitype, gender = chf, cvd > av3) = {0} AND 2-of-3(sho = mitype, cvd > afb, hr > diasbp) = {1} AND 2-of-3(sho = mitype, hr < sysbp, gender > mitype) = {0} THEN  (p=37.0, n=0.0, P=450.0, N=0.0)
+r10: IF 2-of-3(sho = mitype, gender = chf, hr < sysbp) = {0} AND 2-of-3(sho = mitype, gender > sho, cvd > sho) = {0} AND bmi = (-inf, 26.81) = {1} THEN  (p=76.0, n=0.0, P=450.0, N=0.0)
+r11: IF 2-of-3(sho = mitype, gender = chf, hr < sysbp) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender > mitype) = {1} AND 2-of-3(sho = mitype, hr < sysbp, afb = sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, cvd > sho) = {1} AND bmi = (-inf, 26.81) = {1} THEN  (p=5.0, n=0.0, P=450.0, N=0.0)
+r12: IF 2-of-3(sho = mitype, hr > diasbp, afb = sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender > mitype) = {1} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {0} AND 2-of-3(sho = mitype, hr > diasbp, cvd > chf) = {0} THEN  (p=9.0, n=0.0, P=450.0, N=0.0)
+r13: IF 2-of-3(sho = mitype, gender = chf, hr < sysbp) = {1} AND 2-of-3(sho = mitype, hr > diasbp, cvd > chf) = {0} THEN  (p=137.0, n=0.0, P=450.0, N=0.0)
+r14: IF 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {0} AND bmi = (-inf, 24.85) = {1} AND 2-of-3(sho = mitype, hr > diasbp, cvd = miord) = {1} THEN  (p=40.0, n=0.0, P=450.0, N=0.0)
+r15: IF 2-of-3(sho = mitype, hr > diasbp, cvd > av3) = {1} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {0} AND 2-of-3(sho = mitype, miord < mitype, chf = miord) = {0} AND 2-of-3(sho = mitype, hr < diasbp, cvd > sho) = {0} THEN  (p=39.0, n=0.0, P=450.0, N=0.0)
+r16: IF 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {0} AND 2-of-3(afb = sho, age = (-inf, 71.50), bmi != <22.27, 22.47)) = {1} AND 2-of-3(sho = mitype, gender = chf, afb = sho) = {0} THEN  (p=82.0, n=0.0, P=450.0, N=0.0)
+r17: IF 2-of-3(sho = mitype, hr > diasbp, cvd > av3) = {1} AND bmi = (-inf, 34.34) = {1} AND 2-of-3(sho = mitype, hr > diasbp, afb = sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender > sho) = {1} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {0} AND 2-of-3(sho = mitype, hr < diasbp, gender = chf) = {1} AND 2-of-3(sho = mitype, hr < sysbp, gender > mitype) = {0} THEN  (p=10.0, n=0.0, P=450.0, N=0.0)

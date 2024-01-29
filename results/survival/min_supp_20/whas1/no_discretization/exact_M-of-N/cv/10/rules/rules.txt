@@ -1,14 +1,16 @@
 Rules qualities:
-r1: 1.0
-r2: 0.9999999999997022
-r3: 0.9999999999999999
-r4: 0.9999999999939592
-r5: 0.9999999511216437
-r6: 1.0
+r1: 0.9999997912737603
+r2: 0.9999999999633467
+r3: 0.9989762154281755
+r4: 0.9999999998540032
+r5: 0.9682373344607441
+r6: 0.9999999999997022
+r7: 1.0
 ________________________________
-r1: IF SHO = (-inf, 0.50) = {1} THEN  (p=398.0, n=0.0, P=433.0, N=0.0)
-r2: IF MIORD = MITYPE = {1} AND CHF < MITYPE = {0} THEN  (p=46.0, n=0.0, P=433.0, N=0.0)
-r3: IF SHO > MIORD = {0} AND CHF = MITYPE = {0} AND SHO = CHF = {1} THEN  (p=260.0, n=0.0, P=433.0, N=0.0)
-r4: IF SHO = CHF = {0} AND CHF > MIORD = {0} THEN  (p=66.0, n=0.0, P=433.0, N=0.0)
-r5: IF CHF = MITYPE = {0} THEN  (p=326.0, n=0.0, P=433.0, N=0.0)
-r6: IF SHO > MIORD = {1} THEN  (p=18.0, n=0.0, P=433.0, N=0.0)
+r1: IF SHO = CHF = {0} THEN  (p=148.0, n=0.0, P=433.0, N=0.0)
+r2: IF 2-of-3(CHF < MITYPE, AGE = (-inf, 72.50), SHO = CHF) = {0} AND SHO = (-inf, 0.50) = {1} AND MIORD = MITYPE = {0} AND MIORD = CHF = {1} AND 2-of-3(SHO = CHF, MIORD = CHF, CHF < MITYPE) = {0} THEN  (p=132.0, n=0.0, P=433.0, N=0.0)
+r3: IF 2-of-3(CHF < MITYPE, AGE = (-inf, 72.50), SHO = CHF) = {0} AND MIORD = CHF = {0} AND 2-of-3(SHO = CHF, MIORD = CHF, CHF < MITYPE) = {1} THEN  (p=57.0, n=0.0, P=433.0, N=0.0)
+r4: IF SHO = (-inf, 0.50) = {1} AND MIORD = MITYPE = {0} AND MIORD = CHF = {1} AND 2-of-3(SHO = CHF, MIORD = CHF, CHF < MITYPE) = {0} THEN  (p=175.0, n=0.0, P=433.0, N=0.0)
+r5: IF MIORD < SHO = {0} AND MIORD = CHF = {0} AND 2-of-3(SHO = CHF, MIORD = CHF, CHF < MITYPE) = {1} THEN  (p=79.0, n=0.0, P=433.0, N=0.0)
+r6: IF MIORD = MITYPE = {1} AND CHF < MITYPE = {0} THEN  (p=46.0, n=0.0, P=433.0, N=0.0)
+r7: IF MIORD < SHO = {1} THEN  (p=18.0, n=0.0, P=433.0, N=0.0)

@@ -1,18 +1,28 @@
 Rules qualities:
-r1: 1.0
-r2: 0.9999999923222809
-r3: 0.9999999994723859
-r4: 0.9994630385519825
-r5: 0.9999999999908826
-r6: 0.99999998466544
-r7: 1.0
-r8: 1.0
+r1: 0.9999853066627993
+r2: 0.9999325438712857
+r3: 0.9964988740563515
+r4: 0.9999992199579489
+r5: 0.9915912072076543
+r6: 0.7719124069301145
+r7: 0.9999999441830151
+r8: 0.9999999991359426
+r9: 0.9999398898129092
+r10: 0.9999999968819686
+r11: 1.0
+r12: 0.9999999999958888
+r13: 1.0
 ________________________________
-r1: IF age = <70.50, inf) = {0} THEN  (p=210.0, n=0.0, P=450.0, N=0.0)
-r2: IF sho = miord = {1} AND 2-of-3(age = <70.50, inf), bmi != <24.96, 26.29), sho = av3) = {0} AND sho = mitype = {1} AND chf = miord = {0} THEN  (p=33.0, n=0.0, P=450.0, N=0.0)
-r3: IF sho = miord = {0} AND sho = av3 = {1} AND chf = miord = {1} THEN  (p=57.0, n=0.0, P=450.0, N=0.0)
-r4: IF afb = miord = {1} AND gender > cvd = {0} THEN  (p=252.0, n=0.0, P=450.0, N=0.0)
-r5: IF 2-of-3(sho = chf, age = (-inf, 73), bmi != <21.87, 22.60)) = {0} AND sho = miord = {1} AND bmi != <24.96, 26.29) = {1} AND bmi != <21.87, 22.60) = {1} AND bmi = (-inf, 26.38) = {1} AND chf = miord = {0} THEN  (p=22.0, n=0.0, P=450.0, N=0.0)
-r6: IF 2-of-3(sho = chf, age = (-inf, 73), bmi != <21.87, 22.60)) = {0} AND sho = miord = {1} AND bmi != <21.87, 22.60) = {1} AND chf = miord = {0} AND hr < diasbp = {0} THEN  (p=31.0, n=0.0, P=450.0, N=0.0)
-r7: IF bmi = (-inf, 25.46) = {1} AND 2-of-3(bmi != <24.96, 26.29), age = (-inf, 73), sho = av3) = {1} AND hr < diasbp = {0} THEN  (p=92.0, n=0.0, P=450.0, N=0.0)
-r8: IF age = <70.50, inf) = {1} THEN  (p=240.0, n=0.0, P=450.0, N=0.0)
+r1: IF 2-of-3(sho = mitype, chf = miord, afb = miord) = {1} AND 2-of-3(age = <70.50, inf), chf = miord, sho = chf) = {1} AND 2-of-3(gender = mitype, hr < diasbp, chf = miord) = {1} AND 2-of-3(sho = miord, gender = mitype, afb = miord) = {1} THEN  (p=38.0, n=0.0, P=450.0, N=0.0)
+r2: IF 2-of-3(sho = mitype, hr < diasbp, afb = miord) = {0} AND 2-of-3(age = <70.50, inf), chf = miord, sho = chf) = {1} AND 2-of-3(sho = chf, gender = mitype, afb = miord) = {0} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {0} AND gender = mitype = {1} THEN  (p=28.0, n=0.0, P=450.0, N=0.0)
+r3: IF 2-of-3(gender = mitype, hr < diasbp, sho = miord) = {0} AND 2-of-3(sho = miord, hr < diasbp, afb = miord) = {1} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {0} AND 2-of-3(sho = av3, hr < diasbp, chf = miord) = {1} THEN  (p=17.0, n=0.0, P=450.0, N=0.0)
+r4: IF 2-of-3(bmi != <21.87, 22.60), chf = miord, sho = chf) = {0} AND 2-of-3(age = <70.50, inf), chf = miord, sho = chf) = {1} AND 2-of-3(sho = miord, hr < diasbp, chf = miord) = {1} AND 2-of-3(sho = av3, hr < diasbp, chf = miord) = {1} THEN  (p=49.0, n=0.0, P=450.0, N=0.0)
+r5: IF 2-of-3(sho = mitype, gender = mitype, afb = miord) = {1} AND 2-of-3(age = <70.50, inf), chf = miord, sho = chf) = {1} AND sho = mitype = {1} AND 2-of-3(sho = miord, gender = mitype, afb = miord) = {1} THEN  (p=20.0, n=0.0, P=450.0, N=0.0)
+r6: IF 2-of-3(sho = mitype, chf = miord, afb = miord) = {0} AND 2-of-3(sho = miord, hr < diasbp, chf = miord) = {1} AND 2-of-3(sho = av3, chf = miord, afb = miord) = {1} THEN  (p=17.0, n=0.0, P=450.0, N=0.0)
+r7: IF 2-of-3(sho = chf, hr < diasbp, afb = miord) = {1} AND 2-of-3(age = (-inf, 73), sho < chf, bmi != <21.87, 22.60)) = {1} AND 2-of-3(sho = av3, hr < diasbp, afb = miord) = {1} THEN  (p=75.0, n=0.0, P=450.0, N=0.0)
+r8: IF 2-of-3(afb = miord, age = (-inf, 73), chf = miord) = {0} AND 2-of-3(sho = mitype, hr < diasbp, afb = miord) = {1} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {1} THEN  (p=103.0, n=0.0, P=450.0, N=0.0)
+r9: IF 2-of-3(sho = mitype, hr < diasbp, afb = miord) = {0} AND sho = mitype = {1} AND 2-of-3(afb = miord, age = (-inf, 73), bmi != <21.87, 22.60)) = {0} AND hr < diasbp = {1} THEN  (p=40.0, n=0.0, P=450.0, N=0.0)
+r10: IF 2-of-3(sho = miord, chf = miord, gender = mitype) = {0} AND 2-of-3(sho = av3, chf = miord, gender = mitype) = {0} AND age = <70.50, inf) = {0} THEN  (p=89.0, n=0.0, P=450.0, N=0.0)
+r11: IF age = <70.50, inf) = {0} THEN  (p=210.0, n=0.0, P=450.0, N=0.0)
+r12: IF sho = miord = {0} AND bmi != <24.96, 26.29) = {1} AND chf = miord = {1} THEN  (p=56.0, n=0.0, P=450.0, N=0.0)
+r13: IF age = <70.50, inf) = {1} THEN  (p=240.0, n=0.0, P=450.0, N=0.0)

@@ -1,6 +1,8 @@
 Rules qualities:
 r1: 1.0
 r2: 1.0
+r3: 1.0
 ________________________________
-r1: IF bili = <2.50, inf) = {0} THEN  (p=252.0, n=0.0, P=376.0, N=0.0)
-r2: IF bili = <2.50, inf) = {1} THEN  (p=124.0, n=0.0, P=376.0, N=0.0)
+r1: IF 2-of-3(age < ast, bili = (-inf, 3.05), stage = (-inf, 3.50)) = {1} THEN  (p=272.0, n=0.0, P=376.0, N=0.0)
+r2: IF bili = (-inf, 2.05) = {1} THEN  (p=234.0, n=0.0, P=376.0, N=0.0)
+r3: IF 2-of-3(age < ast, bili = (-inf, 3.05), stage = (-inf, 3.50)) = {0} THEN  (p=104.0, n=0.0, P=376.0, N=0.0)

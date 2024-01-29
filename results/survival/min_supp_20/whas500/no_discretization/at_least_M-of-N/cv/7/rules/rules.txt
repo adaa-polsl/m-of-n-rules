@@ -1,14 +1,16 @@
 Rules qualities:
-r1: 1.0
-r2: 0.999999999998038
-r3: 0.999999988138602
-r4: 0.9999999994723859
-r5: 1.0
-r6: 1.0
+r1: 0.9999999999999917
+r2: 1.0
+r3: 0.9999999999979087
+r4: 0.9999952998108801
+r5: 0.9999999958249282
+r6: 0.999998483637382
+r7: 0.9999913846703892
 ________________________________
-r1: IF age = <70.50, inf) = {0} THEN  (p=210.0, n=0.0, P=450.0, N=0.0)
-r2: IF sho = miord = {0} AND bmi != <24.96, 26.29) = {1} AND chf = miord = {1} AND gender = mitype = {0} THEN  (p=32.0, n=0.0, P=450.0, N=0.0)
-r3: IF sho = miord = {1} AND 2-of-3(age = <70.50, inf), bmi != <24.96, 26.29), sho = av3) = {1} AND sho = mitype = {1} AND 2-of-3(diasbp = (-inf, 89), chf = miord, sho = av3) = {1} AND chf = miord = {0} THEN  (p=30.0, n=0.0, P=450.0, N=0.0)
-r4: IF sho = miord = {0} AND sho = av3 = {1} AND chf = miord = {1} THEN  (p=57.0, n=0.0, P=450.0, N=0.0)
-r5: IF age = (-inf, 73) = {0} THEN  (p=220.0, n=0.0, P=450.0, N=0.0)
-r6: IF age = (-inf, 73) = {1} THEN  (p=230.0, n=0.0, P=450.0, N=0.0)
+r1: IF 2-of-3(afb = miord, age = (-inf, 73), bmi != <21.87, 22.60)) = {1} AND 2-of-3(gender = mitype, hr < diasbp, sho = chf) = {1} THEN  (p=208.0, n=0.0, P=450.0, N=0.0)
+r2: IF age = (-inf, 73) = {1} THEN  (p=230.0, n=0.0, P=450.0, N=0.0)
+r3: IF sho = miord = {0} AND bmi != <24.96, 26.29) = {1} AND chf = miord = {1} AND hr < diasbp = {0} THEN  (p=43.0, n=0.0, P=450.0, N=0.0)
+r4: IF sho = miord = {1} AND 2-of-3(sho = mitype, chf = miord, gender = mitype) = {0} AND 2-of-3(sho = av3, chf = miord, gender = mitype) = {0} AND age = <70.50, inf) = {1} THEN  (p=25.0, n=0.0, P=450.0, N=0.0)
+r5: IF 2-of-3(sho = miord, hr < diasbp, chf = miord) = {1} AND 2-of-3(sho = av3, hr < diasbp, afb = miord) = {1} THEN  (p=223.0, n=0.0, P=450.0, N=0.0)
+r6: IF 2-of-3(sho = av3, hr < diasbp, chf = miord) = {0} THEN  (p=130.0, n=0.0, P=450.0, N=0.0)
+r7: IF 2-of-3(sho = miord, hr < diasbp, afb = miord) = {0} THEN  (p=190.0, n=0.0, P=450.0, N=0.0)

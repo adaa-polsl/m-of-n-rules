@@ -1,6 +1,12 @@
 Rules qualities:
 r1: 1.0
-r2: 1.0
+r2: 0.9999969185685859
+r3: 0.9999999395561558
+r4: 0.9995576167851712
+r5: 0.9999985670364921
 ________________________________
 r1: IF bili = (-inf, 2.05) = {1} THEN  (p=233.0, n=0.0, P=377.0, N=0.0)
-r2: IF bili = (-inf, 2.05) = {0} THEN  (p=144.0, n=0.0, P=377.0, N=0.0)
+r2: IF 2-of-3(age != <43.01, 43.90), bili = (-inf, 2.05), hepato = spiders) = {0} AND 2-of-3(trt > hepato, hepato = spiders, bili > albumin) = {0} AND copper > ast = {0} THEN  (p=39.0, n=0.0, P=377.0, N=0.0)
+r3: IF 2-of-3(trt > hepato, hepato = spiders, copper > ast) = {1} AND 2-of-3(age != <43.01, 43.90), bili = (-inf, 2.05), hepato = spiders) = {0} AND 2-of-3(copper > ast, hepato = spiders, bili > albumin) = {1} THEN  (p=41.0, n=0.0, P=377.0, N=0.0)
+r4: IF 2-of-3(trt > hepato, hepato = spiders, copper > ast) = {1} THEN  (p=100.0, n=0.0, P=377.0, N=0.0)
+r5: IF 2-of-3(trt > hepato, hepato = spiders, copper > ast) = {0} AND hepato = spiders = {1} AND 2-of-3(age != <43.01, 43.90), bili = (-inf, 2.05), copper > ast) = {1} THEN  (p=55.0, n=0.0, P=377.0, N=0.0)

@@ -1,8 +1,16 @@
 Rules qualities:
-r1: 0.9999999999998108
-r2: 1.0
-r3: 1.0
+r1: 0.999999975160608
+r2: 0.9999999999994345
+r3: 0.9999940427504296
+r4: 1.0
+r5: 0.9999116913483622
+r6: 0.9999999999815063
+r7: 0.9184682472273518
 ________________________________
-r1: IF sho < mitype = {0} AND gender = av3 = {0} AND gender = chf = {1} THEN  (p=65.0, n=0.0, P=450.0, N=0.0)
-r2: IF age = (-inf, 69.50) = {0} THEN  (p=247.0, n=0.0, P=450.0, N=0.0)
-r3: IF age = (-inf, 69.50) = {1} THEN  (p=203.0, n=0.0, P=450.0, N=0.0)
+r1: IF 2-of-3(sho < mitype, cvd = chf, gender = sho) = {0} AND cvd > afb = {0} THEN  (p=61.0, n=0.0, P=450.0, N=0.0)
+r2: IF 2-of-3(cvd > afb, sho < mitype, gender = av3) = {0} AND 2-of-3(sho < mitype, cvd = chf, gender = sho) = {0} AND 2-of-3(cvd > afb, sho < mitype, gender = sho) = {0} AND gender = chf = {1} THEN  (p=70.0, n=0.0, P=450.0, N=0.0)
+r3: IF gender = sho = {1} AND gender = av3 = {1} THEN  (p=253.0, n=0.0, P=450.0, N=0.0)
+r4: IF age = (-inf, 77.50) = {0} THEN  (p=158.0, n=0.0, P=450.0, N=0.0)
+r5: IF sho = mitype = {1} AND gender = av3 = {0} THEN  (p=148.0, n=0.0, P=450.0, N=0.0)
+r6: IF 2-of-3(sho < mitype, cvd = chf, gender = sho) = {1} AND age = (-inf, 77.50) = {1} AND gender = chf = {1} THEN  (p=94.0, n=0.0, P=450.0, N=0.0)
+r7: IF 2-of-3(age = (-inf, 77.50), bmi != <21.40, 22.47), cvd = chf) = {1} AND sho < mitype = {1} AND gender = sho = {0} AND gender = chf = {0} THEN  (p=20.0, n=0.0, P=450.0, N=0.0)

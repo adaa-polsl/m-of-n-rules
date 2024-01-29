@@ -1,8 +1,16 @@
 Rules qualities:
 r1: 1.0
-r2: 1.0
-r3: 1.0
+r2: 0.9999999999997372
+r3: 0.9999999999825155
+r4: 0.9999999999859022
+r5: 0.9999999999999992
+r6: 0.9999992780929398
+r7: 1.0
 ________________________________
 r1: IF SHO > MIORD = {1} THEN  (p=18.0, n=0.0, P=433.0, N=0.0)
-r2: IF 2-of-3(AGE != <67, 72), CPK != <880, 982), MITYPE = (-inf, 2.50)) = {1} AND AGE != <73.50, 77) = {1} AND CPK != <456.50, 465) = {1} AND SHO > MIORD = {0} AND CHF = MITYPE = {0} AND SHO < CHF = {0} THEN  (p=242.0, n=0.0, P=433.0, N=0.0)
-r3: IF SHO > MIORD = {0} THEN  (p=415.0, n=0.0, P=433.0, N=0.0)
+r2: IF CPK != <456.50, 465) = {1} AND 2-of-3(AGE != <67, 72), CHF = MITYPE, CPK != <1050, 1118)) = {1} AND SHO > MIORD = {0} AND CPK != <33.50, 186) = {1} AND 2-of-3(SEX > SHO, SHO = CHF, CHF < MITYPE) = {1} AND CPK != <579, 730) = {1} AND CPK != <206.50, 227) = {1} THEN  (p=180.0, n=0.0, P=433.0, N=0.0)
+r3: IF 2-of-3(SEX > SHO, SHO < MIORD, CHF < MITYPE) = {0} AND SEX < CHF = {1} AND CHF > MIORD = {0} THEN  (p=27.0, n=0.0, P=433.0, N=0.0)
+r4: IF 2-of-3(SEX > SHO, SHO = CHF, CHF < MITYPE) = {0} THEN  (p=134.0, n=0.0, P=433.0, N=0.0)
+r5: IF AGE = (-inf, 75.50) = {1} AND CPK != <227.50, 245) = {1} AND SEX < CHF = {0} AND SHO = CHF = {1} THEN  (p=220.0, n=0.0, P=433.0, N=0.0)
+r6: IF SHO = CHF = {0} THEN  (p=148.0, n=0.0, P=433.0, N=0.0)
+r7: IF SHO = (-inf, 0.50) = {1} THEN  (p=402.0, n=0.0, P=433.0, N=0.0)
