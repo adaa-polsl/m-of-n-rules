@@ -8,10 +8,14 @@ from m_of_n_survival import config
 import pandas as pd
 from utils.rulekit.survival import SurvivalRules
 from sklearn import metrics
+from utils.helpers import (
+    calculate_ruleset_conditions,
+    ConditionsCounts,
+)
 
 
 def write_rules_to_file(clf: SurvivalRules, file_path: str):
-    with open(os.path.join(file_path), 'w+') as f:
+    with open(os.path.join(file_path, 'rules.txt'), 'w+') as f:
         f.write(f'Rules qualities:\n')
         for i, rule in enumerate(clf.model.rules):
             f.write(f'r{i + 1}: {rule.weight}\n')
@@ -19,7 +23,14 @@ def write_rules_to_file(clf: SurvivalRules, file_path: str):
         for i, rule in enumerate(clf.model.rules):
             f.write(
                 f'r{i + 1}: {str(rule)} (p={rule.weighted_p}, n={rule.weighted_n}, P={rule.weighted_P}, N={rule.weighted_N})\n')
-
+    os.makedirs(os.path.join(file_path, 'estimators'), exist_ok=True)
+    for i, rule in  enumerate(clf.model.rules):
+        times = list(rule._java_object.getEstimator().getTimes())
+        probs = [
+            rule._java_object.getEstimator().getProbabilityAt(t) for t in times
+        ]
+        estimator = pd.DataFrame({'time': times, 'probability': probs})
+        estimator.to_csv(os.path.join(file_path, 'estimators', f'r{i + 1}.csv'), index=False)
 
 def generate_results(
     experiment_config: ExperimentConfig,
@@ -36,8 +47,8 @@ def generate_results(
             _X_test: pd.DataFrame,
             _y_test: pd.DataFrame) -> dict:
 
-        prediction_train = clf.predict(_X_train)
-        prediction_test = clf.predict(_X_test)
+        conditions_counts: ConditionsCounts = calculate_ruleset_conditions(
+            clf.model)
 
         tmp = ' '.join(
             list(map(lambda r: str(r), clf.model.rules)))
@@ -74,6 +85,8 @@ def generate_results(
 
                 'rules':  clf.model.stats.rules_count,
                 'conditions_count': clf.model.stats.rules_count * clf.model.stats.conditions_per_rule,
+                'plain conditions count': conditions_counts.plain / clf.model.stats.rules_count,
+                'complex conditions count': conditions_counts.complex / clf.model.stats.rules_count,
                 'avg conditions per rule': clf.model.stats.conditions_per_rule,
                 'avg rule quality': clf.model.stats.avg_rule_quality,
                 'avg rule precision': clf.model.stats.avg_rule_precision,
@@ -81,6 +94,10 @@ def generate_results(
                 'training time total (s)': clf.model.stats.time_total_s,
                 'training time growing (s)': clf.model.stats.time_growing_s,
                 'training time pruning (s)': clf.model.stats.time_pruning_s,
+
+                'pvalue significance fdr': clf.model.calculate_significance_fdr(alpha=0.05)['fraction'],
+                'pvalue significance fwer': clf.model.calculate_significance_fwer(alpha=0.05)['fraction'],
+
 
                 'induction measure': config.DEFAULT_PARAMS_VALUE['induction_measure'].value.replace('Measures.', ''),
                 'pruning measure': config.DEFAULT_PARAMS_VALUE['pruning_measure'].value.replace('Measures.', ''),

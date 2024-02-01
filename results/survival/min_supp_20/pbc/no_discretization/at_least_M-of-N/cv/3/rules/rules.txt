@@ -1,8 +1,6 @@
 Rules qualities:
 r1: 1.0
 r2: 1.0
-r3: 1.0
 ________________________________
 r1: IF bili = (-inf, 1.20) = {1} THEN  (p=171.0, n=0.0, P=376.0, N=0.0)
-r2: IF 2-of-3(age = (-inf, 63.94), bili = (-inf, 2.60), ascites = hepato) = {0} THEN  (p=96.0, n=0.0, P=376.0, N=0.0)
-r3: IF bili = (-inf, 1.20) = {0} THEN  (p=205.0, n=0.0, P=376.0, N=0.0)
+r2: IF bili < protime = {0} THEN  (p=376.0, n=0.0, P=376.0, N=0.0)

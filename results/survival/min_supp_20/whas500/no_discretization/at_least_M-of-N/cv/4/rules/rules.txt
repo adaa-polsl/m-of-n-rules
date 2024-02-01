@@ -1,18 +1,14 @@
 Rules qualities:
-r1: 0.9999999417576634
-r2: 0.9999999980327032
-r3: 0.99999999648562
-r4: 0.9999999999999818
-r5: 0.9999999998042678
-r6: 0.9999999938383451
-r7: 0.9999999126810629
-r8: 1.0
+r1: 0.9999999999957544
+r2: 0.9991430778531031
+r3: 0.9999999993460892
+r4: 0.9999810313532648
+r5: 0.9995781135246518
+r6: 0.9999946493887965
 ________________________________
-r1: IF age = (-inf, 71.50) = {1} AND 2-of-3(sho < miord, av3 = miord, mitype = sho) = {1} AND 2-of-3(sho < miord, chf = miord, mitype = sho) = {1} AND mitype = miord = {1} THEN  (p=65.0, n=0.0, P=450.0, N=0.0)
-r2: IF mitype > sho = {1} AND age = (-inf, 71.50) = {1} AND mitype > chf = {1} THEN  (p=74.0, n=0.0, P=450.0, N=0.0)
-r3: IF mitype > sho = {1} AND age = (-inf, 71.50) = {1} AND mitype > afb = {1} THEN  (p=85.0, n=0.0, P=450.0, N=0.0)
-r4: IF sho < chf = {1} AND 2-of-3(cvd > chf, sho < chf, mitype = av3) = {1} THEN  (p=96.0, n=0.0, P=450.0, N=0.0)
-r5: IF mitype > sho = {0} AND 2-of-3(sho = miord, mitype > sho, chf = miord) = {0} THEN  (p=193.0, n=0.0, P=450.0, N=0.0)
-r6: IF mitype = av3 = {0} AND 2-of-3(sho < miord, chf = miord, mitype = av3) = {0} AND 2-of-3(sho < miord, av3 = miord, mitype = sho) = {0} THEN  (p=123.0, n=0.0, P=450.0, N=0.0)
-r7: IF 2-of-3(sho = miord, mitype > sho, av3 = miord) = {0} AND 2-of-3(sho = miord, cvd > chf, mitype = chf) = {0} THEN  (p=96.0, n=0.0, P=450.0, N=0.0)
-r8: IF age = (-inf, 71.50) = {0} THEN  (p=229.0, n=0.0, P=450.0, N=0.0)
+r1: IF sho = chf = {0} THEN  (p=134.0, n=0.0, P=450.0, N=0.0)
+r2: IF 2-of-3(hr != <105, 114), chf = miord, sho = chf) = {1} AND cvd > av3 = {0} AND cvd = chf = {1} AND chf = miord = {1} AND sho < miord = {0} THEN  (p=72.0, n=0.0, P=450.0, N=0.0)
+r3: IF 2-of-3(cvd > av3, sho = chf, hr = (-inf, 123)) = {1} AND chf = miord = {1} AND sho < miord = {0} THEN  (p=212.0, n=0.0, P=450.0, N=0.0)
+r4: IF chf = miord = {0} AND sho < miord = {0} THEN  (p=82.0, n=0.0, P=450.0, N=0.0)
+r5: IF cvd = chf = {1} AND sho < miord = {1} THEN  (p=67.0, n=0.0, P=450.0, N=0.0)
+r6: IF cvd = chf = {0} AND cvd > av3 = {1} THEN  (p=218.0, n=0.0, P=450.0, N=0.0)

@@ -1,10 +1,6 @@
 Rules qualities:
-r1: 0.9984950785575964
+r1: 1.0
 r2: 1.0
-r3: 1.0
-r4: 1.0
 ________________________________
-r1: IF hepato = spiders = {1} AND 2-of-3(trt > hepato, bili > albumin, ascites = spiders) = {0} THEN  (p=8.0, n=0.0, P=376.0, N=0.0)
-r2: IF 2-of-3(age != <32.84, 35.79), bili = (-inf, 2.10), protime = (-inf, 11.25)) = {1} THEN  (p=321.0, n=0.0, P=376.0, N=0.0)
-r3: IF bili = (-inf, 2.10) = {1} THEN  (p=228.0, n=0.0, P=376.0, N=0.0)
-r4: IF bili = (-inf, 2.10) = {0} THEN  (p=148.0, n=0.0, P=376.0, N=0.0)
+r1: IF bili = (-inf, 2.50) = {1} THEN  (p=250.0, n=0.0, P=376.0, N=0.0)
+r2: IF bili = (-inf, 2.50) = {0} THEN  (p=126.0, n=0.0, P=376.0, N=0.0)

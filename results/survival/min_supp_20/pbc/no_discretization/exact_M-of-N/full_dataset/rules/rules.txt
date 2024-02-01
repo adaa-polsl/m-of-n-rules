@@ -1,20 +1,8 @@
 Rules qualities:
-r1: 0.9983191860803893
-r2: 0.6947725068513443
+r1: 1.0
+r2: 1.0
 r3: 1.0
-r4: 1.0
-r5: 0.9907401204859082
-r6: 0.8188753522884058
-r7: 1.0
-r8: 0.9999999988377303
-r9: 1.0
 ________________________________
-r1: IF 2-of-3(age != <43.01, 43.90), albumin != <3.16, 3.29), bili = (-inf, 2.05)) = {0} AND albumin = (-inf, 3.33) = {0} AND chol < alk.phos = {0} AND 2-of-3(age < trig, chol < alk.phos, platelet != <129, 172)) = {1} THEN  (p=33.0, n=0.0, P=418.0, N=0.0)
-r2: IF age < trig = {0} AND chol < alk.phos = {1} THEN  (p=4.0, n=0.0, P=418.0, N=0.0)
-r3: IF 2-of-3(age != <43.01, 43.90), albumin != <3.16, 3.29), bili = (-inf, 2.05)) = {0} THEN  (p=263.0, n=0.0, P=418.0, N=0.0)
-r4: IF age != <45.14, 46.52) = {1} AND 2-of-3(age != <45.14, 46.52), albumin != <3.16, 3.29), bili = (-inf, 2.05)) = {0} THEN  (p=253.0, n=0.0, P=418.0, N=0.0)
-r5: IF albumin = (-inf, 3.33) = {0} AND 2-of-3(age != <43.01, 43.90), albumin != <3.16, 3.29), bili = (-inf, 8.75)) = {0} AND chol < alk.phos = {0} AND 2-of-3(age < trig, chol < alk.phos, platelet != <129, 172)) = {1} AND protime = (-inf, 11.10) = {1} THEN  (p=40.0, n=0.0, P=418.0, N=0.0)
-r6: IF age < trig = {0} AND albumin != <3.16, 3.29) = {1} AND chol < alk.phos = {0} THEN  (p=6.0, n=0.0, P=418.0, N=0.0)
-r7: IF albumin = (-inf, 3.33) = {0} THEN  (p=297.0, n=0.0, P=418.0, N=0.0)
-r8: IF 2-of-3(age != <43.01, 43.90), albumin != <3.16, 3.29), bili = (-inf, 2.05)) = {1} AND 2-of-3(trt > spiders, chol < alk.phos, age < trig) = {1} AND 2-of-3(chol < alk.phos, protime = (-inf, 11.10), platelet != <129, 172)) = {0} AND albumin = (-inf, 4.15) = {1} THEN  (p=15.0, n=0.0, P=418.0, N=0.0)
-r9: IF 2-of-3(age != <43.01, 43.90), albumin != <3.16, 3.29), bili = (-inf, 2.05)) = {1} THEN  (p=155.0, n=0.0, P=418.0, N=0.0)
+r1: IF 2-of-3(age != <45.14, 46.52), bili = (-inf, 2.05), trt > spiders) = {0} THEN  (p=260.0, n=0.0, P=418.0, N=0.0)
+r2: IF bili = <2.25, inf) = {0} THEN  (p=269.0, n=0.0, P=418.0, N=0.0)
+r3: IF 2-of-3(age != <45.14, 46.52), bili = (-inf, 2.05), trt > spiders) = {1} THEN  (p=158.0, n=0.0, P=418.0, N=0.0)

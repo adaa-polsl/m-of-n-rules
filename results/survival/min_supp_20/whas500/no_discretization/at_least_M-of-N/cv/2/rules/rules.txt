@@ -1,18 +1,8 @@
 Rules qualities:
-r1: 0.9996810725326558
-r2: 0.9999999998984018
-r3: 0.989745174101932
-r4: 1.0
-r5: 0.9999999999983287
-r6: 0.9992192087508857
-r7: 0.9999999999987085
-r8: 0.9955038709980786
+r1: 0.9999999983766169
+r2: 1.0
+r3: 1.0
 ________________________________
-r1: IF 2-of-3(hr > diasbp, sho < mitype, chf = miord) = {0} AND 2-of-3(sho < mitype, gender > sho, hr < sysbp) = {0} AND 2-of-3(sho = mitype, hr > diasbp, afb = sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {1} AND 2-of-3(sho = mitype, gender > sho, chf = miord) = {1} AND 2-of-3(sho = mitype, cvd = sho, hr < sysbp) = {1} THEN  (p=30.0, n=0.0, P=450.0, N=0.0)
-r2: IF 2-of-3(sho = mitype, hr > diasbp, cvd > chf) = {0} AND 2-of-3(sho = mitype, hr > diasbp, cvd > sho) = {0} AND age = <70.50, inf) = {0} THEN  (p=85.0, n=0.0, P=450.0, N=0.0)
-r3: IF 2-of-3(hr > diasbp, sho < mitype, afb = sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender > mitype) = {1} AND 2-of-3(sho = mitype, miord < mitype, chf = miord) = {0} AND 2-of-3(cvd = miord, sho < mitype, hr < sysbp) = {1} AND age = <70.50, inf) = {0} THEN  (p=9.0, n=0.0, P=450.0, N=0.0)
-r4: IF age = <70.50, inf) = {0} THEN  (p=209.0, n=0.0, P=450.0, N=0.0)
-r5: IF 2-of-3(sho = mitype, hr > diasbp, gender > sho) = {1} AND 2-of-3(sho = mitype, hr > diasbp, gender = chf) = {1} THEN  (p=210.0, n=0.0, P=450.0, N=0.0)
-r6: IF 2-of-3(sho = mitype, miord < mitype, chf = miord) = {0} AND 2-of-3(sho = mitype, hr < diasbp, cvd > sho) = {0} THEN  (p=52.0, n=0.0, P=450.0, N=0.0)
-r7: IF 2-of-3(sho = av3, hr < diasbp, cvd > chf) = {1} THEN  (p=285.0, n=0.0, P=450.0, N=0.0)
-r8: IF 2-of-3(sho = mitype, gender > sho, cvd > sho) = {0} AND 2-of-3(sho = mitype, hr > diasbp, gender > sho) = {0} AND 2-of-3(sho = mitype, gender = chf, age < hr) = {0} AND 2-of-3(sho = mitype, hr < diasbp, chf = miord) = {0} AND 2-of-3(sho = mitype, hr < diasbp, age < hr) = {0} AND 2-of-3(sho = mitype, gender = chf, cvd > sho) = {0} AND 2-of-3(sho = mitype, gender > sho, chf = miord) = {0} THEN  (p=22.0, n=0.0, P=450.0, N=0.0)
+r1: IF cvd > av3 = {1} AND gender > sho = {0} AND cvd > sho = {1} AND gender = chf = {1} AND age = <70.50, inf) = {0} THEN  (p=75.0, n=0.0, P=450.0, N=0.0)
+r2: IF age = (-inf, 71.50) = {1} THEN  (p=218.0, n=0.0, P=450.0, N=0.0)
+r3: IF age = <70.50, inf) = {1} THEN  (p=241.0, n=0.0, P=450.0, N=0.0)
