@@ -1,6 +1,8 @@
 Rules qualities:
-r1: 1.0
-r2: 1.0
+r1: 0.9999999999972035
+r2: 0.9951596864674994
+r3: 0.9953310360711788
 ________________________________
-r1: IF 2-of-3(ANCrecovery < time_to_aGvHD_III_IV, ABOmatch = extcGvHD, CD34kgx10d6 != <10.22, 10.85)) = {0} THEN  (p=16.0, n=0.0, P=168.0, N=0.0)
-r2: IF 2-of-3(ANCrecovery < time_to_aGvHD_III_IV, ABOmatch = extcGvHD, CD34kgx10d6 != <10.22, 10.85)) = {1} THEN  (p=152.0, n=0.0, P=168.0, N=0.0)
+r1: IF donor_age < ANC_recovery = {1} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
+r2: IF 2-of-3(recipient_age < PLT_recovery, donor_age > PLT_recovery, CD34_x1e6_per_kg > CD3_to_CD34_ratio) = {1} THEN  (p=148.0, n=0.0, P=168.0, N=0.0)
+r3: IF 2-of-3(recipient_age < PLT_recovery, donor_age > PLT_recovery, CD34_x1e6_per_kg > CD3_to_CD34_ratio) = {0} AND 2-of-3(recipient_body_mass < time_to_acute_GvHD_III_IV, donor_age > PLT_recovery, CD34_x1e6_per_kg > CD3_x1e8_per_kg) = {1} THEN  (p=16.0, n=0.0, P=168.0, N=0.0)

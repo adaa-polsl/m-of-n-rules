@@ -1,8 +1,14 @@
 Rules qualities:
 r1: 1.0
 r2: 1.0
-r3: 1.0
+r3: 0.9999997756686247
+r4: 0.9761617988865878
+r5: 1.0
+r6: 1.0
 ________________________________
-r1: IF TREAT > IV3 = {0} THEN  (p=462.0, n=0.0, P=517.0, N=0.0)
-r2: IF SITE = IV3 = {0} AND IV > LNDT = {1} THEN  (p=300.0, n=0.0, P=517.0, N=0.0)
-r3: IF SITE = IV3 = {1} AND TREAT > SITE = {1} THEN  (p=38.0, n=0.0, P=517.0, N=0.0)
+r1: IF TREAT > IV3 = {1} THEN  (p=55.0, n=0.0, P=517.0, N=0.0)
+r2: IF SITE < IV3 = {1} THEN  (p=292.0, n=0.0, P=517.0, N=0.0)
+r3: IF IV > LNDT = {0} AND LNDT = (-inf, 2.07) = {1} AND FRAC != <1.03, 1.06) = {1} THEN  (p=49.0, n=0.0, P=517.0, N=0.0)
+r4: IF IV < NDT = {0} AND TREAT = SITE = {0} AND NDT > SITE = {1} AND TREAT > SITE = {0} AND HC = (-inf, 3.50) = {0} AND RACE = TREAT = {1} AND RACE < FRAC = {0} THEN  (p=3.0, n=0.0, P=517.0, N=0.0)
+r5: IF RACE < LNDT = {1} AND RACE = IV3 = {1} THEN  (p=76.0, n=0.0, P=517.0, N=0.0)
+r6: IF TREAT > IV3 = {0} THEN  (p=462.0, n=0.0, P=517.0, N=0.0)

@@ -1,24 +1,30 @@
 Rules qualities:
-r1: 0.9999999439779107
-r2: 0.9973614750763081
-r3: 1.0
-r4: 0.9992590709745438
-r5: 1.0
-r6: 0.8774632836785567
-r7: 0.8452712231560887
-r8: 0.9947783532882755
-r9: 0.9735969685497761
-r10: 0.8252898910198889
-r11: 0.7174997463481038
+r1: 0.9999998985709893
+r2: 0.9983221636582502
+r3: 0.9998306021808478
+r4: 0.9999568208683249
+r5: 0.9909362916787845
+r6: 0.9690198058828448
+r7: 0.9619923122331936
+r8: 0.8568709035620394
+r9: 0.9928043365691154
+r10: 0.9488182529719652
+r11: 0.9271473147921633
+r12: 1.0
+r13: 0.9996050792414584
+r14: 0.9999180757218067
 ________________________________
-r1: IF ANCrecovery = <500008.50, inf) THEN  (p=5.0, n=0.0, P=169.0, N=0.0)
-r2: IF Recipientgender = {1} AND Stemcellsource = {0} AND Donorage35 = {0} AND RecipientABO = {-1} THEN  (p=6.0, n=0.0, P=169.0, N=0.0)
-r3: IF extcGvHD = {?} THEN  (p=30.0, n=0.0, P=169.0, N=0.0)
-r4: IF CD34kgx10d6 = <5.64, 10.24) AND time_to_aGvHD_III_IV = <38.50, inf) AND RecipientCMV = {1} AND Riskgroup = {1} THEN  (p=6.0, n=0.0, P=169.0, N=0.0)
-r5: IF extcGvHD = {1} THEN  (p=116.0, n=0.0, P=169.0, N=0.0)
-r6: IF Antigen = {1} AND DonorABO = {1} AND HLAmatch = {2} AND IIIV = {1} THEN  (p=4.0, n=0.0, P=169.0, N=0.0)
-r7: IF Gendermatch = {0} AND Riskgroup = {0} AND DonorCMV = {1} THEN  (p=36.0, n=0.0, P=169.0, N=0.0)
-r8: IF Recipientgender = {1} AND extcGvHD = {0} AND DonorCMV = {0} THEN  (p=9.0, n=0.0, P=169.0, N=0.0)
-r9: IF DonorABO = {0} AND ANCrecovery = <12.50, inf) AND Gendermatch = {0} AND PLTrecovery = (-inf, 29) AND RecipientCMV = {0} THEN  (p=8.0, n=0.0, P=169.0, N=0.0)
-r10: IF Recipientage10 = {0} AND RecipientCMV = {0} AND RecipientABO = {-1} THEN  (p=13.0, n=0.0, P=169.0, N=0.0)
-r11: IF extcGvHD = {0} AND Recipientageint = {1} AND Riskgroup = {1} THEN  (p=5.0, n=0.0, P=169.0, N=0.0)
+r1: IF ANC_recovery = <500007.50, inf) THEN  (p=5.0, n=0.0, P=169.0, N=0.0)
+r2: IF stem_cell_source = {bone_marrow} AND donor_age_below_35 = {yes} AND recipient_gender = {male} AND recipient_ABO = {B} THEN  (p=6.0, n=0.0, P=169.0, N=0.0)
+r3: IF recipient_age_int = {10_20} AND allel = {1} AND donor_CMV = {absent} AND antigen = {2} THEN  (p=7.0, n=0.0, P=169.0, N=0.0)
+r4: IF CD34_x1e6_per_kg = (-inf, 10.50) AND CD3_to_CD34_ratio = <0.98, inf) THEN  (p=86.0, n=0.0, P=169.0, N=0.0)
+r5: IF recipient_CMV = {?} AND acute_GvHD_III_IV = {yes} THEN  (p=3.0, n=0.0, P=169.0, N=0.0)
+r6: IF recipient_CMV = {present} AND donor_CMV = {absent} AND disease_group = {malignant} AND recipient_gender = {female} AND ANC_recovery = (-inf, 15.50) THEN  (p=10.0, n=0.0, P=169.0, N=0.0)
+r7: IF ANC_recovery = <14, 15.50) AND acute_GvHD_II_III_IV = {no} THEN  (p=16.0, n=0.0, P=169.0, N=0.0)
+r8: IF allel = {1} AND recipient_CMV = {absent} AND disease = {ALL} THEN  (p=7.0, n=0.0, P=169.0, N=0.0)
+r9: IF gender_match = {other} AND CD34_x1e6_per_kg = (-inf, 20.21) AND ANC_recovery = (-inf, 15.50) AND acute_GvHD_II_III_IV = {yes} AND recipient_ABO = {B} THEN  (p=11.0, n=0.0, P=169.0, N=0.0)
+r10: IF HLA_mismatch = {matched} AND donor_ABO = {0} AND ANC_recovery = (-inf, 12.50) AND acute_GvHD_II_III_IV = {no} THEN  (p=6.0, n=0.0, P=169.0, N=0.0)
+r11: IF recipient_age_int = {0_5} AND recipient_gender = {male} AND ANC_recovery = (-inf, 13.50) AND antigen = {2} THEN  (p=5.0, n=0.0, P=169.0, N=0.0)
+r12: IF extensive_chronic_GvHD = {no} AND relapse = {no} THEN  (p=92.0, n=0.0, P=169.0, N=0.0)
+r13: IF relapse = {yes} AND acute_GvHD_II_III_IV = {yes} THEN  (p=15.0, n=0.0, P=169.0, N=0.0)
+r14: IF recipient_age = (-inf, 14.05) THEN  (p=127.0, n=0.0, P=169.0, N=0.0)

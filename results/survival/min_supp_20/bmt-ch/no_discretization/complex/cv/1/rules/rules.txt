@@ -1,26 +1,26 @@
 Rules qualities:
-r1: 0.9823112525506554
-r2: 0.9985751258583011
-r3: 0.93053092389715
-r4: 0.9747782575813935
-r5: 0.9986735832859767
-r6: 0.9991549118071856
-r7: 0.9998933203710699
-r8: 0.9944611590710618
-r9: 0.987844709706173
-r10: 0.9914502968614431
-r11: 0.9978568083537136
-r12: 1.0
+r1: 0.9957605013011985
+r2: 0.9940260820783474
+r3: 0.8416151913556665
+r4: 0.8416151913556665
+r5: 0.9586201445009189
+r6: 0.8277255719312886
+r7: 0.9997023831246187
+r8: 0.9996446652262647
+r9: 0.9947144652445201
+r10: 1.0
+r11: 0.9989194574480178
+r12: 0.9999999999997499
 ________________________________
-r1: IF Recipientgender != HLAmismatch AND Recipientgender != Txpostrelapse AND Stemcellsource = Gendermatch AND aGvHDIIIIV = Gendermatch AND aGvHDIIIIV = Recipientgender THEN  (p=12.0, n=0.0, P=168.0, N=0.0)
-r2: IF CD3dCD34 < CD3dkgx10d8 AND HLAmismatch = IIIV AND Relapse = IIIV AND PLTrecovery = (-inf, 28) THEN  (p=15.0, n=0.0, P=168.0, N=0.0)
-r3: IF Stemcellsource = Relapse AND aGvHDIIIIV = Donorage35 AND aGvHDIIIIV = Recipientage10 AND extcGvHD = RecipientCMV THEN  (p=5.0, n=0.0, P=168.0, N=0.0)
-r4: IF Rbodymass > PLTrecovery AND Recipientage10 != Riskgroup AND Recipientgender != Recipientage10 AND Stemcellsource = Recipientage10 AND aGvHDIIIIV = Recipientage10 THEN  (p=14.0, n=0.0, P=168.0, N=0.0)
-r5: IF RecipientRh = RecipientCMV AND Stemcellsource = IIIV AND extcGvHD = RecipientCMV THEN  (p=31.0, n=0.0, P=168.0, N=0.0)
-r6: IF Recipientgender != IIIV AND aGvHDIIIIV != Riskgroup AND aGvHDIIIIV != Txpostrelapse THEN  (p=51.0, n=0.0, P=168.0, N=0.0)
-r7: IF aGvHDIIIIV = Riskgroup AND extcGvHD != DonorCMV THEN  (p=42.0, n=0.0, P=168.0, N=0.0)
-r8: IF Stemcellsource = Relapse AND Txpostrelapse != IIIV THEN  (p=29.0, n=0.0, P=168.0, N=0.0)
-r9: IF Recipientage < CD34kgx10d6 THEN  (p=86.0, n=0.0, P=168.0, N=0.0)
-r10: IF ABOmatch = RecipientCMV AND Donorage35 = Txpostrelapse AND HLAmismatch = Txpostrelapse AND Relapse = Txpostrelapse AND ANCrecovery = (-inf, 18.50) THEN  (p=32.0, n=0.0, P=168.0, N=0.0)
-r11: IF Gendermatch = Riskgroup AND Relapse = Gendermatch AND Stemcellsource != Gendermatch AND aGvHDIIIIV != Gendermatch THEN  (p=53.0, n=0.0, P=168.0, N=0.0)
-r12: IF extcGvHD = {1, 0} THEN  (p=143.0, n=0.0, P=168.0, N=0.0)
+r1: IF acute_GvHD_III_IV != acute_GvHD_II_III_IV AND relapse != acute_GvHD_II_III_IV THEN  (p=51.0, n=0.0, P=168.0, N=0.0)
+r2: IF CD3_x1e8_per_kg > CD3_to_CD34_ratio AND donor_age > PLT_recovery AND acute_GvHD_III_IV = recipient_age_below_10 AND tx_post_relapse = recipient_age_below_10 THEN  (p=20.0, n=0.0, P=168.0, N=0.0)
+r3: IF recipient_CMV != donor_CMV AND CD34_x1e6_per_kg < CD3_to_CD34_ratio AND CMV_status != antigen AND donor_age_below_35 = recipient_age_below_10 AND tx_post_relapse = acute_GvHD_III_IV AND tx_post_relapse = recipient_age_below_10 THEN  (p=3.0, n=0.0, P=168.0, N=0.0)
+r4: IF tx_post_relapse != recipient_age_below_10 AND ANC_recovery < time_to_acute_GvHD_III_IV AND donor_age < PLT_recovery AND donor_age_below_35 != acute_GvHD_II_III_IV AND CD3_x1e8_per_kg = (-inf, 5.38) THEN  (p=3.0, n=0.0, P=168.0, N=0.0)
+r5: IF recipient_age_below_10 = acute_GvHD_II_III_IV AND relapse = donor_age_below_35 AND tx_post_relapse = acute_GvHD_II_III_IV AND tx_post_relapse = donor_age_below_35 THEN  (p=13.0, n=0.0, P=168.0, N=0.0)
+r6: IF donor_age < time_to_acute_GvHD_III_IV AND donor_age_below_35 = recipient_age_below_10 AND CD3_x1e8_per_kg < CD3_to_CD34_ratio AND acute_GvHD_III_IV = acute_GvHD_II_III_IV AND relapse != acute_GvHD_III_IV THEN  (p=3.0, n=0.0, P=168.0, N=0.0)
+r7: IF PLT_recovery < time_to_acute_GvHD_III_IV AND acute_GvHD_III_IV = acute_GvHD_II_III_IV AND relapse = acute_GvHD_II_III_IV AND tx_post_relapse != donor_age_below_35 AND tx_post_relapse = acute_GvHD_II_III_IV THEN  (p=24.0, n=0.0, P=168.0, N=0.0)
+r8: IF tx_post_relapse != acute_GvHD_III_IV AND tx_post_relapse != acute_GvHD_II_III_IV THEN  (p=44.0, n=0.0, P=168.0, N=0.0)
+r9: IF recipient_age < CD3_x1e8_per_kg AND relapse = donor_age_below_35 AND tx_post_relapse = donor_age_below_35 THEN  (p=15.0, n=0.0, P=168.0, N=0.0)
+r10: IF extensive_chronic_GvHD = {no, yes} THEN  (p=139.0, n=0.0, P=168.0, N=0.0)
+r11: IF recipient_body_mass < ANC_recovery AND CD34_x1e6_per_kg > CD3_x1e8_per_kg AND CD3_x1e8_per_kg < ANC_recovery AND recipient_age > CD3_to_CD34_ratio THEN  (p=8.0, n=0.0, P=168.0, N=0.0)
+r12: IF ANC_recovery = time_to_acute_GvHD_III_IV THEN  (p=8.0, n=0.0, P=168.0, N=0.0)

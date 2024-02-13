@@ -1,8 +1,18 @@
 Rules qualities:
-r1: 1.0
-r2: 0.9999999999108387
-r3: 1.0
+r1: 0.99999952050287
+r2: 0.9999993539351956
+r3: 0.9999995382490657
+r4: 0.9999968671739492
+r5: 0.9962072992029579
+r6: 0.977008640100207
+r7: 0.9899392798531841
+r8: 0.9999552502160635
 ________________________________
-r1: IF PLTrecovery = (-inf, 500094.50) = {0} THEN  (p=14.0, n=0.0, P=168.0, N=0.0)
-r2: IF 2-of-3(CD34kgx10d6 != <7.76, 8.03), ABOmatch = extcGvHD, PLTrecovery = (-inf, 500094.50)) = {0} AND ABOmatch = extcGvHD = {1} THEN  (p=93.0, n=0.0, P=168.0, N=0.0)
-r3: IF PLTrecovery = (-inf, 500094.50) = {1} THEN  (p=154.0, n=0.0, P=168.0, N=0.0)
+r1: IF recipient_age > CD34_x1e6_per_kg = {0} AND 2-of-3(tx_post_relapse = relapse, recipient_age < CD34_x1e6_per_kg, CD3_to_CD34_ratio != <1.69, 1.79)) = {0} AND tx_post_relapse = acute_GvHD_III_IV = {1} THEN  (p=42.0, n=0.0, P=168.0, N=0.0)
+r2: IF recipient_age > CD34_x1e6_per_kg = {0} AND relapse != acute_GvHD_III_IV = {0} THEN  (p=51.0, n=0.0, P=168.0, N=0.0)
+r3: IF 2-of-3(CD3_to_CD34_ratio != <1.69, 1.79), tx_post_relapse = acute_GvHD_III_IV, recipient_age < ANC_recovery) = {0} AND ANC_recovery = (-inf, 17.50) = {1} AND PLT_recovery > time_to_acute_GvHD_III_IV = {0} AND relapse != acute_GvHD_III_IV = {0} THEN  (p=55.0, n=0.0, P=168.0, N=0.0)
+r4: IF ANC_recovery = (-inf, 17.50) = {1} AND relapse != acute_GvHD_III_IV = {0} THEN  (p=86.0, n=0.0, P=168.0, N=0.0)
+r5: IF recipient_age > CD34_x1e6_per_kg = {1} AND ANC_recovery = (-inf, 14.50) = {0} AND donor_age_below_35 = recipient_age_below_10 = {1} AND 2-of-3(tx_post_relapse = relapse, recipient_age < CD34_x1e6_per_kg, CD3_to_CD34_ratio != <1.69, 1.79)) = {0} THEN  (p=6.0, n=0.0, P=168.0, N=0.0)
+r6: IF recipient_age < ANC_recovery = {1} AND recipient_age > CD34_x1e6_per_kg = {1} AND PLT_recovery > time_to_acute_GvHD_III_IV = {0} AND CD3_x1e8_per_kg < CD3_to_CD34_ratio = {1} THEN  (p=21.0, n=0.0, P=168.0, N=0.0)
+r7: IF recipient_age < ANC_recovery = {1} AND ANC_recovery = (-inf, 14.50) = {0} AND recipient_age < CD3_x1e8_per_kg = {0} THEN  (p=69.0, n=0.0, P=168.0, N=0.0)
+r8: IF relapse != acute_GvHD_III_IV = {1} THEN  (p=58.0, n=0.0, P=168.0, N=0.0)

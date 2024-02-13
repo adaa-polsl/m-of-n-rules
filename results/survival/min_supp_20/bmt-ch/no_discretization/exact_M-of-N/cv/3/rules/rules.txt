@@ -1,30 +1,34 @@
 Rules qualities:
-r1: 0.9999997709976216
-r2: 0.9999999999999315
-r3: 0.9999999965828813
-r4: 0.999999982933694
-r5: 0.9999995647612068
-r6: 0.9999948386598423
-r7: 0.9999999976674906
-r8: 0.9996914693107131
-r9: 0.9999838912470709
-r10: 0.975876774922827
-r11: 0.9999957062978304
-r12: 0.9999996275845875
-r13: 0.999994592441103
-r14: 0.9999894617364099
+r1: 0.9996830836594602
+r2: 0.9997154213104424
+r3: 0.9961512581628524
+r4: 0.9999695740913837
+r5: 0.9846927733016231
+r6: 0.8914459954178805
+r7: 0.9857699641243038
+r8: 0.9999586443340649
+r9: 0.8838700622777674
+r10: 0.9357818615677984
+r11: 0.9999991104367147
+r12: 0.9992399465684546
+r13: 0.9999081114922527
+r14: 0.9950022133041933
+r15: 0.9662489248331039
+r16: 0.9999999447548281
 ________________________________
-r1: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND 2-of-3(RecipientCMV = DonorCMV, aGvHDIIIIV != Gendermatch, Recipientage < PLTrecovery) = {0} AND Txpostrelapse != Riskgroup = {0} THEN  (p=20.0, n=0.0, P=168.0, N=0.0)
-r2: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND extcGvHD = RecipientCMV = {0} AND 2-of-3(aGvHDIIIIV != IIIV, CD3dCD34 < CD3dkgx10d8, Recipientage < PLTrecovery) = {1} AND CD3dCD34 < CD3dkgx10d8 = {0} THEN  (p=13.0, n=0.0, P=168.0, N=0.0)
-r3: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND extcGvHD = RecipientCMV = {0} AND 2-of-3(aGvHDIIIIV != IIIV, CD3dCD34 < CD3dkgx10d8, Recipientage < PLTrecovery) = {1} AND Txpostrelapse != Riskgroup = {0} THEN  (p=18.0, n=0.0, P=168.0, N=0.0)
-r4: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND aGvHDIIIIV != IIIV = {1} AND extcGvHD = RecipientCMV = {0} AND Txpostrelapse != Riskgroup = {0} THEN  (p=16.0, n=0.0, P=168.0, N=0.0)
-r5: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND extcGvHD = RecipientCMV = {0} AND Txpostrelapse != Riskgroup = {0} THEN  (p=29.0, n=0.0, P=168.0, N=0.0)
-r6: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND Txpostrelapse != Riskgroup = {0} THEN  (p=45.0, n=0.0, P=168.0, N=0.0)
-r7: IF Recipientage < PLTrecovery = {1} AND 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} AND extcGvHD = RecipientCMV = {0} AND 2-of-3(aGvHDIIIIV != IIIV, CD3dCD34 < CD3dkgx10d8, Recipientage < PLTrecovery) = {1} THEN  (p=21.0, n=0.0, P=168.0, N=0.0)
-r8: IF aGvHDIIIIV != IIIV = {1} AND extcGvHD = RecipientCMV = {0} THEN  (p=47.0, n=0.0, P=168.0, N=0.0)
-r9: IF Recipientage < PLTrecovery = {1} AND 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {0} THEN  (p=55.0, n=0.0, P=168.0, N=0.0)
-r10: IF RecipientRh = DonorCMV = {0} AND Donorage35 = IIIV = {0} THEN  (p=56.0, n=0.0, P=168.0, N=0.0)
-r11: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {1} AND Txpostrelapse != Riskgroup = {0} THEN  (p=78.0, n=0.0, P=168.0, N=0.0)
-r12: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {1} AND 2-of-3(aGvHDIIIIV != IIIV, Txpostrelapse != IIIV, Recipientage < PLTrecovery) = {1} AND CD3dCD34 < CD3dkgx10d8 = {1} THEN  (p=52.0, n=0.0, P=168.0, N=0.0)
-r13: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {1} AND 2-of-3(aGvHDIIIIV != IIIV, Txpostrelapse != IIIV, Recipientage < PLTrecovery) = {1} THEN  (p=75.0, n=0.0, P=168.0, N=0.0)
-r14: IF 2-of-3(CD34kgx10d6 != <7.76, 8.73), Stemcellsource = Relapse, Recipientage < PLTrecovery) = {1} AND aGvHDIIIIV = Riskgroup = {0} THEN  (p=66.0, n=0.0, P=168.0, N=0.0)
+r1: IF donor_age > recipient_body_mass = {0} AND PLT_recovery = (-inf, 28) = {0} AND recipient_CMV != donor_CMV = {1} THEN  (p=24.0, n=0.0, P=168.0, N=0.0)
+r2: IF recipient_age > CD34_x1e6_per_kg = {1} AND acute_GvHD_III_IV != donor_age_below_35 = {0} AND donor_age > recipient_body_mass = {0} AND CD34_x1e6_per_kg > CD3_x1e8_per_kg = {1} AND PLT_recovery > time_to_acute_GvHD_III_IV = {0} AND PLT_recovery = (-inf, 28) = {1} AND 2-of-3(recipient_age < ANC_recovery, ANC_recovery < PLT_recovery, CD34_x1e6_per_kg > CD3_x1e8_per_kg) = {0} AND ANC_recovery < PLT_recovery = {1} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
+r3: IF recipient_age_below_10 != acute_GvHD_II_III_IV = {0} AND acute_GvHD_III_IV != donor_age_below_35 = {1} AND 2-of-3(tx_post_relapse = relapse, ANC_recovery < PLT_recovery, CD34_x1e6_per_kg != <3.41, 4.27)) = {1} THEN  (p=12.0, n=0.0, P=168.0, N=0.0)
+r4: IF disease != {lymphoma} = {1} THEN  (p=9.0, n=0.0, P=168.0, N=0.0)
+r5: IF CD3_x1e8_per_kg > CD3_to_CD34_ratio = {1} AND donor_age_below_35 = recipient_age_below_10 = {1} AND ANC_recovery < PLT_recovery = {0} THEN  (p=9.0, n=0.0, P=168.0, N=0.0)
+r6: IF CD3_x1e8_per_kg > CD3_to_CD34_ratio = {0} AND donor_age_below_35 = recipient_age_below_10 = {1} AND 2-of-3(recipient_age < ANC_recovery, ANC_recovery < PLT_recovery, CD34_x1e6_per_kg > CD3_x1e8_per_kg) = {1} AND CD34_x1e6_per_kg > CD3_to_CD34_ratio = {1} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
+r7: IF donor_age_below_35 = recipient_age_below_10 = {0} AND CD3_to_CD34_ratio = (-inf, 2.47) = {1} AND ANC_recovery < PLT_recovery = {1} THEN  (p=26.0, n=0.0, P=168.0, N=0.0)
+r8: IF CD3_x1e8_per_kg > CD3_to_CD34_ratio = {1} AND 2-of-3(ANC_recovery = (-inf, 20.50), relapse = acute_GvHD_III_IV, CD34_x1e6_per_kg != <4.53, 5.37)) = {0} THEN  (p=64.0, n=0.0, P=168.0, N=0.0)
+r9: IF CD3_x1e8_per_kg > CD3_to_CD34_ratio = {0} AND 2-of-3(ANC_recovery = (-inf, 20.50), relapse = acute_GvHD_III_IV, CD34_x1e6_per_kg != <4.53, 5.37)) = {0} AND tx_post_relapse != recipient_age_below_10 = {1} AND PLT_recovery = (-inf, 28) = {1} AND 2-of-3(recipient_age < ANC_recovery, ANC_recovery < PLT_recovery, CD34_x1e6_per_kg > CD3_x1e8_per_kg) = {0} THEN  (p=4.0, n=0.0, P=168.0, N=0.0)
+r10: IF tx_post_relapse != donor_age_below_35 = {1} AND recipient_age_below_10 != acute_GvHD_II_III_IV = {0} AND 2-of-3(recipient_age < ANC_recovery, ANC_recovery < PLT_recovery, CD34_x1e6_per_kg > CD3_x1e8_per_kg) = {0} AND CD34_x1e6_per_kg > CD3_to_CD34_ratio = {1} THEN  (p=29.0, n=0.0, P=168.0, N=0.0)
+r11: IF 2-of-3(ANC_recovery = (-inf, 20.50), relapse = acute_GvHD_III_IV, CD34_x1e6_per_kg != <4.53, 5.37)) = {0} AND donor_age < PLT_recovery = {0} AND disease != {lymphoma} = {0} AND PLT_recovery = (-inf, 28) = {1} AND relapse != acute_GvHD_III_IV = {0} THEN  (p=62.0, n=0.0, P=168.0, N=0.0)
+r12: IF PLT_recovery = (-inf, 28) = {0} THEN  (p=61.0, n=0.0, P=168.0, N=0.0)
+r13: IF 2-of-3(tx_post_relapse = relapse, ANC_recovery = (-inf, 18), CD34_x1e6_per_kg != <1.30, 1.91)) = {0} AND donor_age < PLT_recovery = {0} AND PLT_recovery > time_to_acute_GvHD_III_IV = {0} AND PLT_recovery = (-inf, 28) = {1} THEN  (p=71.0, n=0.0, P=168.0, N=0.0)
+r14: IF acute_GvHD_III_IV != donor_age_below_35 = {1} AND donor_age < PLT_recovery = {0} AND CD34_x1e6_per_kg = (-inf, 8.63) = {0} AND relapse != acute_GvHD_II_III_IV = {1} AND 2-of-3(recipient_age < ANC_recovery, ANC_recovery < PLT_recovery, CD34_x1e6_per_kg > CD3_x1e8_per_kg) = {0} THEN  (p=12.0, n=0.0, P=168.0, N=0.0)
+r15: IF ANC_recovery = (-inf, 18) = {1} AND recipient_age > CD34_x1e6_per_kg = {0} AND acute_GvHD_III_IV != donor_age_below_35 = {0} AND CD3_x1e8_per_kg > CD3_to_CD34_ratio = {1} AND 2-of-3(ANC_recovery = (-inf, 20.50), PLT_recovery = (-inf, 28), CD34_x1e6_per_kg != <1.30, 1.91)) = {0} AND CD3_to_CD34_ratio = (-inf, 2.47) = {0} THEN  (p=6.0, n=0.0, P=168.0, N=0.0)
+r16: IF CD34_x1e6_per_kg != <6.31, 7.20) = {1} AND donor_age < PLT_recovery = {0} AND 2-of-3(ANC_recovery = (-inf, 20.50), PLT_recovery = (-inf, 28), CD34_x1e6_per_kg != <1.30, 1.91)) = {0} AND disease != {lymphoma} = {0} AND CD34_x1e6_per_kg != <4.40, 4.79) = {1} AND PLT_recovery = (-inf, 28) = {1} THEN  (p=88.0, n=0.0, P=168.0, N=0.0)

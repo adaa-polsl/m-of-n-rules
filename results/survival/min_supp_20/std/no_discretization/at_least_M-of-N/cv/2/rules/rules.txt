@@ -1,16 +1,14 @@
 Rules qualities:
-r1: 0.9999892722584431
-r2: 0.9994344579306075
-r3: 0.9999962404074307
-r4: 0.9999978748363635
-r5: 0.9053210490555988
-r6: 0.7024544858464593
-r7: 0.9999978748363635
+r1: 0.9999998841178241
+r2: 0.9999881738167824
+r3: 0.9310962978080635
+r4: 0.9998956891427044
+r5: 0.9805464439381476
+r6: 0.9998956891427044
 ________________________________
-r1: IF discharge > vagina = {0} AND os30d = discharge = {0} AND rs30d < discharge = {0} AND dysuria = dchexam = {0} AND condom = <2.50, inf) = {0} THEN  (p=48.0, n=0.0, P=789.0, N=0.0)
-r2: IF abdpain < discharge = {1} AND os30d = discharge = {1} AND rs30d < discharge = {1} THEN  (p=54.0, n=0.0, P=789.0, N=0.0)
-r3: IF 2-of-3(yschool != <7.50, 10), os12m = abdpain, os30d = abnode) = {0} AND dysuria = dchexam = {0} THEN  (p=145.0, n=0.0, P=789.0, N=0.0)
-r4: IF os30d > dysuria = {1} THEN  (p=157.0, n=0.0, P=789.0, N=0.0)
-r5: IF rs30d = discharge = {1} AND 2-of-3(yschool != <7.50, 10), os12m = abdpain, os30d = abnode) = {0} AND os30d = dysuria = {1} AND dysuria = dchexam = {1} AND condom = <2.50, inf) = {0} THEN  (p=4.0, n=0.0, P=789.0, N=0.0)
-r6: IF rs30d = discharge = {1} AND 2-of-3(yschool != <7.50, 10), os12m = abdpain, os30d = abnode) = {0} AND os30d = dysuria = {1} AND rs30d < dysuria = {1} THEN  (p=4.0, n=0.0, P=789.0, N=0.0)
-r7: IF os30d > dysuria = {0} THEN  (p=632.0, n=0.0, P=789.0, N=0.0)
+r1: IF os30d > abdpain = {1} THEN  (p=151.0, n=0.0, P=789.0, N=0.0)
+r2: IF npartner = dysuria = {0} AND 2-of-3(iinfct > npartner, os30d < dchexam, npartner < condom) = {0} AND os30d = lymph = {1} THEN  (p=76.0, n=0.0, P=789.0, N=0.0)
+r3: IF os30d = discharge = {0} AND yschool = <11.50, inf) = {0} AND npartner < condom = {1} AND os12m > os30d = {1} THEN  (p=8.0, n=0.0, P=789.0, N=0.0)
+r4: IF 2-of-3(npartner < condom, os12m = dysuria, os30d = rs30d) = {0} THEN  (p=199.0, n=0.0, P=789.0, N=0.0)
+r5: IF discharge > vagina = {0} AND os30d = discharge = {0} AND rs30d < dysuria = {0} THEN  (p=130.0, n=0.0, P=789.0, N=0.0)
+r6: IF 2-of-3(npartner < condom, os12m = dysuria, os30d = rs30d) = {1} THEN  (p=590.0, n=0.0, P=789.0, N=0.0)

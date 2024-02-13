@@ -1,6 +1,8 @@
 Rules qualities:
-r1: 1.0
-r2: 1.0
+r1: 0.999096564415117
+r2: 0.9999886641396428
+r3: 0.9999886641396428
 ________________________________
-r1: IF PLTrecovery = (-inf, 500094.50) = {0} THEN  (p=14.0, n=0.0, P=168.0, N=0.0)
-r2: IF PLTrecovery = (-inf, 500094.50) = {1} THEN  (p=154.0, n=0.0, P=168.0, N=0.0)
+r1: IF recipient_age < ANC_recovery = {1} AND recipient_age > CD34_x1e6_per_kg = {1} AND CMV_status != antigen = {0} AND PLT_recovery > time_to_acute_GvHD_III_IV = {0} AND CD3_x1e8_per_kg < CD3_to_CD34_ratio = {1} THEN  (p=6.0, n=0.0, P=168.0, N=0.0)
+r2: IF 2-of-3(tx_post_relapse = relapse, ANC_recovery = (-inf, 17.50), CD3_to_CD34_ratio = (-inf, 6.12)) = {0} THEN  (p=28.0, n=0.0, P=168.0, N=0.0)
+r3: IF 2-of-3(tx_post_relapse = relapse, ANC_recovery = (-inf, 17.50), CD3_to_CD34_ratio = (-inf, 6.12)) = {1} THEN  (p=140.0, n=0.0, P=168.0, N=0.0)

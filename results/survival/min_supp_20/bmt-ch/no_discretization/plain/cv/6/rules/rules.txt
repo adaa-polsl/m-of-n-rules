@@ -1,26 +1,32 @@
 Rules qualities:
-r1: 0.9999841418633407
-r2: 0.9997611171199895
-r3: 0.9997570059552527
-r4: 0.998703461318723
-r5: 0.999884916429827
-r6: 0.9999999999999999
-r7: 0.7294980953789311
-r8: 0.5582071169899713
-r9: 0.9709857351578333
-r10: 0.9999994898408913
-r11: 0.9956925757466235
-r12: 0.9846529321788432
+r1: 0.9963655975568001
+r2: 0.9998935975065453
+r3: 0.9923342383299053
+r4: 0.998846728214328
+r5: 0.9286504049482615
+r6: 0.999999999999998
+r7: 0.9999999999999949
+r8: 1.0
+r9: 0.8392170347632995
+r10: 0.5876161124932175
+r11: 0.9965134978424636
+r12: 0.9324512059212086
+r13: 0.8594670593487246
+r14: 0.952903271227777
+r15: 0.6982276226570584
 ________________________________
-r1: IF ANCrecovery = <500007.50, inf) THEN  (p=4.0, n=0.0, P=168.0, N=0.0)
-r2: IF Recipientgender = {1} AND Stemcellsource = {0} AND Riskgroup = {0} AND RecipientABO = {-1} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
-r3: IF Antigen = {1} AND aGvHDIIIIV = {0} AND Recipientgender = {1} AND RecipientRh = {1} AND CD3dkgx10d8 = <3.37, inf) THEN  (p=5.0, n=0.0, P=168.0, N=0.0)
-r4: IF aGvHDIIIIV = {0} AND DonorABO = {0} AND Riskgroup = {0} AND Rbodymass = <31.50, inf) THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
-r5: IF Recipientageint = {2} AND HLAgrI = {1} AND DonorCMV = {0} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
-r6: IF extcGvHD = {1} THEN  (p=116.0, n=0.0, P=168.0, N=0.0)
-r7: IF Disease = {chronic} THEN  (p=39.0, n=0.0, P=168.0, N=0.0)
-r8: IF CD34kgx10d6 = (-inf, 9.58) AND CD3dCD34 = (-inf, 2.47) AND RecipientABO = {1} AND DonorCMV = {0} THEN  (p=4.0, n=0.0, P=168.0, N=0.0)
-r9: IF Diseasegroup = {1} AND Txpostrelapse = {1} THEN  (p=18.0, n=0.0, P=168.0, N=0.0)
-r10: IF ANCrecovery = (-inf, 16.50) AND Recipientgender = {1} AND Donorage = <30.01, inf) AND PLTrecovery = (-inf, 28) AND RecipientRh = {1} AND Riskgroup = {0} AND IIIV = {1} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
-r11: IF Donorage = <26.40, inf) AND CMVstatus = {0} AND Donorage35 = {0} AND Recipientage10 = {0} AND RecipientCMV = {0} THEN  (p=11.0, n=0.0, P=168.0, N=0.0)
-r12: IF PLTrecovery = (-inf, 20.50) THEN  (p=77.0, n=0.0, P=168.0, N=0.0)
+r1: IF ANC_recovery = <500008.50, inf) THEN  (p=3.0, n=0.0, P=168.0, N=0.0)
+r2: IF donor_CMV = {absent} AND CD34_x1e6_per_kg = <2.00, inf) AND disease_group = {malignant} AND recipient_gender = {male} AND acute_GvHD_II_III_IV = {yes} AND recipient_ABO = {B} THEN  (p=8.0, n=0.0, P=168.0, N=0.0)
+r3: IF stem_cell_source = {bone_marrow} AND donor_ABO = {0} AND recipient_body_mass = <22, inf) AND antigen = {0} THEN  (p=7.0, n=0.0, P=168.0, N=0.0)
+r4: IF disease = {chronic} AND donor_CMV = {absent} AND CD34_x1e6_per_kg = (-inf, 11.01) AND time_to_acute_GvHD_III_IV = <17, inf) AND recipient_gender = {male} THEN  (p=6.0, n=0.0, P=168.0, N=0.0)
+r5: IF recipient_CMV = {present} AND time_to_acute_GvHD_III_IV = <38.50, inf) AND CD3_to_CD34_ratio = (-inf, 7.98) AND recipient_gender = {male} AND risk_group = {high} AND ANC_recovery = <15.50, inf) THEN  (p=6.0, n=0.0, P=168.0, N=0.0)
+r6: IF PLT_recovery = <500123.50, inf) THEN  (p=13.0, n=0.0, P=168.0, N=0.0)
+r7: IF extensive_chronic_GvHD = {no} THEN  (p=113.0, n=0.0, P=168.0, N=0.0)
+r8: IF extensive_chronic_GvHD = {?} THEN  (p=27.0, n=0.0, P=168.0, N=0.0)
+r9: IF donor_ABO = {A} AND extensive_chronic_GvHD = {yes} AND donor_age_below_35 = {no} THEN  (p=3.0, n=0.0, P=168.0, N=0.0)
+r10: IF allel = {2} AND disease = {chronic} AND extensive_chronic_GvHD = {yes} THEN  (p=4.0, n=0.0, P=168.0, N=0.0)
+r11: IF CD3_to_CD34_ratio = (-inf, 4.50) AND risk_group = {low} THEN  (p=72.0, n=0.0, P=168.0, N=0.0)
+r12: IF recipient_age_int = {5_10} AND donor_CMV = {absent} AND ANC_recovery = (-inf, 14) THEN  (p=6.0, n=0.0, P=168.0, N=0.0)
+r13: IF tx_post_relapse = {yes} AND ANC_recovery = (-inf, 13.50) THEN  (p=8.0, n=0.0, P=168.0, N=0.0)
+r14: IF CD34_x1e6_per_kg = <2.43, 6.91) AND recipient_body_mass = (-inf, 62) AND CD3_to_CD34_ratio = <3.46, inf) AND antigen = {0} AND ANC_recovery = <16.50, inf) AND donor_age = <27.39, inf) THEN  (p=5.0, n=0.0, P=168.0, N=0.0)
+r15: IF donor_ABO = {0} AND extensive_chronic_GvHD = {yes} AND acute_GvHD_II_III_IV = {yes} THEN  (p=12.0, n=0.0, P=168.0, N=0.0)

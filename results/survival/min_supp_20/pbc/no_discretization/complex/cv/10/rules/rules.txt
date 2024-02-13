@@ -8,7 +8,7 @@ r6: 0.9999999999999799
 r7: 0.9999857852844819
 r8: 1.0
 ________________________________
-r1: IF age != <52.67, 54.00) AND age = (-inf, 63.94) AND age != <49.58, 52.06) AND ast < platelet AND hepato = ascites AND hepato = spiders AND trt > hepato AND albumin != <3.16, 3.29) AND platelet != <147.50, 172) AND age != <43.01, 43.90) THEN  (p=85.0, n=0.0, P=377.0, N=0.0)
+r1: IF age != <52.67, 54.00) AND age = (-inf, 63.94) AND age != <49.58, 52.06) AND ast < platelet AND ascites = hepato AND hepato = spiders AND trt > hepato AND albumin != <3.16, 3.29) AND platelet != <147.50, 172) AND age != <43.01, 43.90) THEN  (p=85.0, n=0.0, P=377.0, N=0.0)
 r2: IF chol > copper AND copper < platelet AND chol = (-inf, 362.50) THEN  (p=139.0, n=0.0, P=377.0, N=0.0)
 r3: IF bili = (-inf, 2.05) THEN  (p=233.0, n=0.0, P=377.0, N=0.0)
 r4: IF bili < stage THEN  (p=262.0, n=0.0, P=377.0, N=0.0)

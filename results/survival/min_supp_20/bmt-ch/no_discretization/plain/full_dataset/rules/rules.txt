@@ -6,23 +6,23 @@ r4: 0.9917849416759416
 r5: 1.0
 r6: 1.0
 r7: 0.7407326702739889
-r8: 0.8922241413811227
+r8: 0.8449189563610107
 r9: 0.7824416812151822
 r10: 0.9986636905145555
 r11: 0.8945132693649525
-r12: 0.9987014562379649
+r12: 0.9948575224919001
 r13: 0.7213492383752341
 ________________________________
-r1: IF ANCrecovery = <500007.50, inf) THEN  (p=5.0, n=0.0, P=187.0, N=0.0)
-r2: IF Recipientgender = {1} AND Stemcellsource = {0} AND Donorage35 = {0} AND RecipientABO = {-1} THEN  (p=6.0, n=0.0, P=187.0, N=0.0)
-r3: IF extcGvHD = {?} THEN  (p=31.0, n=0.0, P=187.0, N=0.0)
-r4: IF Antigen = {1} AND CD34kgx10d6 = (-inf, 10.24) AND RecipientCMV = {1} AND HLAmatch = {1} THEN  (p=15.0, n=0.0, P=187.0, N=0.0)
-r5: IF PLTrecovery = <500142.50, inf) THEN  (p=17.0, n=0.0, P=187.0, N=0.0)
-r6: IF extcGvHD = {1} THEN  (p=128.0, n=0.0, P=187.0, N=0.0)
-r7: IF ABOmatch = {0} AND extcGvHD = {0} AND Riskgroup = {1} AND IIIV = {1} THEN  (p=2.0, n=0.0, P=187.0, N=0.0)
-r8: IF ANCrecovery = (-inf, 15) AND HLAmismatch = {1} AND extcGvHD = {0} THEN  (p=4.0, n=0.0, P=187.0, N=0.0)
-r9: IF CMVstatus = {3} AND CD3dCD34 = <1.27, inf) AND Recipientageint = {2} AND IIIV = {1} THEN  (p=8.0, n=0.0, P=187.0, N=0.0)
-r10: IF Recipientgender = {1} AND extcGvHD = {0} AND DonorCMV = {0} THEN  (p=11.0, n=0.0, P=187.0, N=0.0)
-r11: IF DonorABO = {0} AND PLTrecovery = <17, inf) AND Donorage35 = {1} AND CD3dCD34 = <1.80, inf) AND RecipientCMV = {0} THEN  (p=8.0, n=0.0, P=187.0, N=0.0)
-r12: IF Recipientgender = {0} AND PLTrecovery = <24, inf) AND RecipientCMV = {0} THEN  (p=7.0, n=0.0, P=187.0, N=0.0)
-r13: IF extcGvHD = {0} AND RecipientRh = {1} AND Recipientageint = {0} AND DonorCMV = {1} THEN  (p=2.0, n=0.0, P=187.0, N=0.0)
+r1: IF ANC_recovery = <500007.50, inf) THEN  (p=5.0, n=0.0, P=187.0, N=0.0)
+r2: IF stem_cell_source = {bone_marrow} AND donor_age_below_35 = {yes} AND recipient_gender = {male} AND recipient_ABO = {B} THEN  (p=6.0, n=0.0, P=187.0, N=0.0)
+r3: IF extensive_chronic_GvHD = {?} THEN  (p=31.0, n=0.0, P=187.0, N=0.0)
+r4: IF allel = {1} AND recipient_CMV = {present} AND CD34_x1e6_per_kg = (-inf, 10.24) AND antigen = {2} THEN  (p=15.0, n=0.0, P=187.0, N=0.0)
+r5: IF PLT_recovery = <500142.50, inf) THEN  (p=17.0, n=0.0, P=187.0, N=0.0)
+r6: IF extensive_chronic_GvHD = {no} THEN  (p=128.0, n=0.0, P=187.0, N=0.0)
+r7: IF ABO_match = {matched} AND extensive_chronic_GvHD = {yes} AND risk_group = {high} AND acute_GvHD_II_III_IV = {yes} THEN  (p=2.0, n=0.0, P=187.0, N=0.0)
+r8: IF donor_ABO = {A} AND HLA_match = {8/10} AND acute_GvHD_II_III_IV = {yes} THEN  (p=7.0, n=0.0, P=187.0, N=0.0)
+r9: IF recipient_age_int = {10_20} AND CMV_status = {3} AND CD3_to_CD34_ratio = <1.27, inf) AND acute_GvHD_II_III_IV = {yes} THEN  (p=8.0, n=0.0, P=187.0, N=0.0)
+r10: IF extensive_chronic_GvHD = {yes} AND donor_CMV = {absent} AND recipient_gender = {male} THEN  (p=11.0, n=0.0, P=187.0, N=0.0)
+r11: IF donor_ABO = {0} AND recipient_CMV = {absent} AND CD3_to_CD34_ratio = <1.80, inf) AND donor_age_below_35 = {no} AND PLT_recovery = <17, inf) THEN  (p=8.0, n=0.0, P=187.0, N=0.0)
+r12: IF PLT_recovery = <24, inf) THEN  (p=84.0, n=0.0, P=187.0, N=0.0)
+r13: IF recipient_age_int = {0_5} AND recipient_rh = {plus} AND donor_CMV = {present} AND extensive_chronic_GvHD = {yes} THEN  (p=2.0, n=0.0, P=187.0, N=0.0)

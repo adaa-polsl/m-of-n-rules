@@ -1,6 +1,14 @@
 Rules qualities:
-r1: 1.0
+r1: 0.9999999999999972
 r2: 1.0
+r3: 1.0
+r4: 1.0
+r5: 1.0
+r6: 1.0
 ________________________________
-r1: IF stdagepill > feq3 = {1} THEN  (p=117.0, n=0.0, P=431.0, N=0.0)
-r2: IF stdagepill > feq3 = {0} THEN  (p=314.0, n=0.0, P=431.0, N=0.0)
+r1: IF sq1 = znq2 = {1} AND scent < cucent = {0} THEN  (p=30.0, n=0.0, P=431.0, N=0.0)
+r2: IF sq3 = cuq1 = {1} THEN  (p=77.0, n=0.0, P=431.0, N=0.0)
+r3: IF sq4 = cuq2 = {1} AND sqt < cuqt = {0} AND pq3 = znq2 = {1} AND sq1 = feq2 = {1} THEN  (p=34.0, n=0.0, P=431.0, N=0.0)
+r4: IF sq1 = feq2 = {0} THEN  (p=353.0, n=0.0, P=431.0, N=0.0)
+r5: IF sqt > cuqt = {1} THEN  (p=53.0, n=0.0, P=431.0, N=0.0)
+r6: IF sq3 = cuq1 = {0} THEN  (p=354.0, n=0.0, P=431.0, N=0.0)
