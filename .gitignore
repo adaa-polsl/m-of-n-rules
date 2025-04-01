@@ -62,3 +62,7 @@ main.ipynb
 ./results/clear.ipynb
 ./datasets/clear.ipynb
 CASE_STUDY/
+
+a.ipynb
+**/*-case-study/*
+results/**/*.html
